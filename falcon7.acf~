@@ -163,7 +163,7 @@ P _gear/0/_lonE 0.0
 P _gear/0/_lonN 0.0
 P _gear/0/_lonR 100.0
 P _gear/0/_scon 20068.800781250
-P _gear/0/_stat_def 0.227398217
+P _gear/0/_stat_def 0.227398261
 P _gear/0/_steerdeg_hispeed 2.0
 P _gear/0/_steerdeg_lospeed 60.0
 P _gear/0/_strut_comp 0.0
@@ -774,7 +774,7 @@ P _obja/3/_v10_att_z_acf_prt_ref -26.600000381
 P _obja/3/_v10_is_internal 1511475121
 P _obja/3/_v10_steers_with_gear 0
 P _obja/count 4
-P _panel_inst_3d 1089
+P _panel_inst_3d 1087
 P _part/0/_bot_s1 0.0
 P _part/0/_bot_s2 0.015625000
 P _part/0/_bot_t1 0.255859375
@@ -51178,7 +51178,7 @@ P acf/_esys_amperage/52 5.0
 P acf/_esys_amperage/53 5.0
 P acf/_esys_amperage/54 5.0
 P acf/_esys_amperage/56 10.0
-P acf/_esys_amperage/57 1.0
+P acf/_esys_amperage/57 10.0
 P acf/_esys_amperage/58 10.0
 P acf/_esys_amperage/59 10.0
 P acf/_esys_amperage/60 10.0
@@ -51284,7 +51284,7 @@ P acf/_esys_amperage/rel_lites_strobe 10.0
 P acf/_esys_amperage/rel_lites_taxi 20.0
 P acf/_esys_amperage/rel_marker 5.0
 P acf/_esys_amperage/rel_navcom1 10.0
-P acf/_esys_amperage/rel_navcom2 1.0
+P acf/_esys_amperage/rel_navcom2 10.0
 P acf/_esys_amperage/rel_pil_tsi 0.0
 P acf/_esys_amperage/rel_rud_trim 10.0
 P acf/_esys_amperage/rel_servo_thro 3.0
@@ -51495,7 +51495,7 @@ P acf/_feather_on_mixt_pull_EQ 0
 P acf/_feather_on_prop_pull_EQ 0
 P acf/_feather_prop_with_oilp 0
 P acf/_feathered_pitch 0.0
-P acf/_ff_rat_idle_JET 0.005000000
+P acf/_ff_rat_idle_JET 0.020000000
 P acf/_ff_rat_idle_PRP 0.250000000
 P acf/_file_writer_version 115501
 P acf/_flap1_cd 0.054000001
@@ -51737,9 +51737,9 @@ P acf/_hyd_flightcons 1
 P acf/_hyd_gear 1
 P acf/_hyd_gear_fail_mode 2
 P acf/_hyd_gear_fail_speed 140.0
-P acf/_hyd_max_p 4900.0
+P acf/_hyd_max_p 3650.0
 P acf/_hyd_max_p_RAT 2900.0
-P acf/_hyd_max_p_ele 3920.0
+P acf/_hyd_max_p_ele 2920.0
 P acf/_hyd_max_p_eng 3300.0
 P acf/_hyd_max_p_rot 1.0
 P acf/_hyd_nw_steer 1
@@ -51753,8 +51753,8 @@ P acf/_hyd_prop_pump_0123/6 0
 P acf/_hyd_prop_pump_0123/7 0
 P acf/_hyd_prop_pump_0123/count 8
 P acf/_hyd_rat_pump_0123 0
-P acf/_idle_rat/0 0.200000003
-P acf/_idle_rat/1 0.419999987
+P acf/_idle_rat/0 0.600000024
+P acf/_idle_rat/1 0.899999976
 P acf/_idle_rat/count 2
 P acf/_incidence_with_flaps 0
 P acf/_inlet_compression_efficiency 0.949999988
@@ -51827,7 +51827,7 @@ P acf/_max_gen_amp_per_gen/7 0.0
 P acf/_max_gen_amp_per_gen/count 8
 P acf/_max_mach_eff 0.899999976
 P acf/_max_oilT 146.0
-P acf/_max_press_diff 20.399999619
+P acf/_max_press_diff 10.399999619
 P acf/_max_vac 8.0
 P acf/_max_xmsn_P 1.0
 P acf/_max_xmsn_T 1.0
@@ -51838,7 +51838,7 @@ P acf/_min_vec_on_ground 0.0
 P acf/_mixt_x_ctr 0.0
 P acf/_n1_power_curve1 2.0
 P acf/_n1_power_curve2 3.500000000
-P acf/_n2_power_curve 2.299999952
+P acf/_n2_power_curve 3.500000000
 P acf/_new_plot_XP3D_cock/0 1
 P acf/_new_plot_XP3D_cock/1 1
 P acf/_new_plot_XP3D_cock/2 0
@@ -57489,6 +57489,7 @@ GROUP Ecrangauche
     END_GROUP
     GROUP FondTrim
       SHOW_EQUAL 1.000000 sim/7x/choixtcas
+      LOCKED
       gen_rotary fondmoteur 2
         POS 502.000000 -140.500000
         IMAGE EG moteur/fondtrim
@@ -57496,6 +57497,7 @@ GROUP Ecrangauche
         SHOW_LESS 0.000000 [0]
         SHOW_EQUAL 1.000000 sim/7x/choixtcas[0]
         SHOW_GREATER 0.000000 [0]
+        LOCKED
         CLIP
         LIGHT_MODE GLASS_AUTO
         LIGHT_RHEOSTAT 0
@@ -57517,6 +57519,7 @@ GROUP Ecrangauche
         POS 564.000000 -192.000000
         IMAGE EG moteur/gen_pointerelvtrim
         DATAREF sim/cockpit2/controls/elevator_trim[0]
+        LOCKED
         LIGHT_MODE GLASS_AUTO
         LIGHT_RHEOSTAT 0
         BUS_SRC 1073741827
@@ -57528,29 +57531,12 @@ GROUP Ecrangauche
         IS_VERTICAL 1
         OFFSET 0.000000
 
-      gen_LED APU_T5
-        POS 564.000000 -239.000000
-        IMAGE gen LED/gen_LEDnewvert
-        DATAREF sim/cockpit2/electrical/APU_EGT_c[0]
-        SHOW_LESS 0.000000 [0]
-        SHOW_EQUAL 1.000000 [0]
-        SHOW_GREATER 0.000000 [0]
-        SIZE 0.800000
-        LIGHT_MODE GLASS_AUTO
-        LIGHT_RHEOSTAT 0
-        BUS_SRC 1073741825
-        KEY_FRAME 0.000000 0.000000 1.000000
-        KEY_FRAME 1.000000 1.000000
-        DIGITS 3
-        DECIMALS 0
-        PERIOD_WIDTH 0
-        LED_ROWS 0
-
       gen_needle gen_needletrim
         POS 507.000000 -184.000000
         IMAGE EG moteur/gen_needletrim
         DATAREF sim/cockpit2/controls/rudder_trim[0]
         SIZE 0.500000
+        LOCKED
         LIGHT_MODE GLASS_AUTO
         LIGHT_RHEOSTAT 0
         BUS_SRC 1073741825
@@ -57564,6 +57550,7 @@ GROUP Ecrangauche
         IMAGE EG moteur/gen_needletrim
         DATAREF sim/cockpit2/controls/aileron_trim[0]
         SIZE 0.500000
+        LOCKED
         LIGHT_MODE GLASS_AUTO
         LIGHT_RHEOSTAT 0
         BUS_SRC 1073741825
@@ -57579,6 +57566,7 @@ GROUP Ecrangauche
         SHOW_LESS 0.000000 [0]
         SHOW_EQUAL 2.000000 [0]
         SHOW_GREATER 0.000000 [0]
+        LOCKED
         CLIP
         LIGHT_MODE GLASS_AUTO
         LIGHT_RHEOSTAT 0
@@ -57597,6 +57585,7 @@ GROUP Ecrangauche
         SHOW_LESS 0.000000 [0]
         SHOW_EQUAL 2.000000 [0]
         SHOW_GREATER 0.000000 [0]
+        LOCKED
         CLIP
         LIGHT_MODE GLASS_AUTO
         LIGHT_RHEOSTAT 0
@@ -57615,6 +57604,7 @@ GROUP Ecrangauche
         SHOW_LESS 0.000000 [0]
         SHOW_EQUAL 2.000000 [0]
         SHOW_GREATER 0.000000 [0]
+        LOCKED
         CLIP
         LIGHT_MODE GLASS_AUTO
         LIGHT_RHEOSTAT 0
@@ -57634,6 +57624,7 @@ GROUP Ecrangauche
         SHOW_EQUAL 2.000000 [0]
         SHOW_GREATER 0.000000 [0]
         SIZE 0.750000
+        LOCKED
         LIGHT_MODE GLASS_AUTO
         LIGHT_RHEOSTAT 0
         BUS_SRC 1073741825
@@ -57652,6 +57643,7 @@ GROUP Ecrangauche
         SHOW_EQUAL 2.000000 [0]
         SHOW_GREATER 0.000000 [0]
         SIZE 0.750000
+        LOCKED
         LIGHT_MODE GLASS_AUTO
         LIGHT_RHEOSTAT 0
         BUS_SRC 1073741825
@@ -57670,6 +57662,7 @@ GROUP Ecrangauche
         SHOW_EQUAL 2.000000 [0]
         SHOW_GREATER 0.000000 [0]
         SIZE 0.750000
+        LOCKED
         LIGHT_MODE GLASS_AUTO
         LIGHT_RHEOSTAT 0
         BUS_SRC 1073741825
@@ -57688,6 +57681,7 @@ GROUP Ecrangauche
         SHOW_EQUAL 2.000000 [0]
         SHOW_GREATER 0.000000 [0]
         SIZE 0.750000
+        LOCKED
         LIGHT_MODE GLASS_AUTO
         LIGHT_RHEOSTAT 0
         BUS_SRC 1073741825
@@ -57706,6 +57700,7 @@ GROUP Ecrangauche
         SHOW_EQUAL 2.000000 [0]
         SHOW_GREATER 0.000000 [0]
         SIZE 0.750000
+        LOCKED
         LIGHT_MODE GLASS_AUTO
         LIGHT_RHEOSTAT 0
         BUS_SRC 1073741825
@@ -57724,6 +57719,7 @@ GROUP Ecrangauche
         SHOW_EQUAL 2.000000 [0]
         SHOW_GREATER 0.000000 [0]
         SIZE 0.750000
+        LOCKED
         LIGHT_MODE GLASS_AUTO
         LIGHT_RHEOSTAT 0
         BUS_SRC 1073741825
@@ -57742,6 +57738,7 @@ GROUP Ecrangauche
         SHOW_EQUAL 2.000000 [0]
         SHOW_GREATER 0.000000 [0]
         SIZE 0.500000
+        LOCKED
         CLIP
         LIGHT_MODE GLASS_AUTO
         LIGHT_RHEOSTAT 0
@@ -57761,6 +57758,7 @@ GROUP Ecrangauche
         SHOW_EQUAL 2.000000 [0]
         SHOW_GREATER 0.000000 [0]
         SIZE 0.500000
+        LOCKED
         CLIP
         LIGHT_MODE GLASS_AUTO
         LIGHT_RHEOSTAT 0
@@ -57780,6 +57778,7 @@ GROUP Ecrangauche
         SHOW_EQUAL 2.000000 [0]
         SHOW_GREATER 0.000000 [0]
         SIZE 0.500000
+        LOCKED
         CLIP
         LIGHT_MODE GLASS_AUTO
         LIGHT_RHEOSTAT 0
@@ -57792,13 +57791,14 @@ GROUP Ecrangauche
         OFFSET 0.000000
 
       gen_LED APUN1% 2 2
-        POS 494.000000 -239.000000
+        POS 459.000000 -239.000000
         IMAGE gen LED/gen_LEDnewvert
         DATAREF sim/cockpit2/electrical/APU_N1_percent[0]
         SHOW_LESS 0.000000 [0]
         SHOW_EQUAL 1.000000 [0]
         SHOW_GREATER 0.000000 [0]
         SIZE 0.800000
+        LOCKED
         LIGHT_MODE GLASS_AUTO
         LIGHT_RHEOSTAT 0
         BUS_SRC 1073741825
@@ -57814,6 +57814,7 @@ GROUP Ecrangauche
         IMAGE gen LED/gen_LEDnewvert
         DATAREF sim/custom/7x/fuel_used1[0]
         SIZE 0.800000
+        LOCKED
         LIGHT_MODE GLASS_AUTO
         LIGHT_RHEOSTAT 0
         BUS_SRC 1073741827
@@ -57829,6 +57830,7 @@ GROUP Ecrangauche
         IMAGE gen LED/gen_LEDnewvert
         DATAREF sim/custom/7x/fuel_used2[0]
         SIZE 0.800000
+        LOCKED
         LIGHT_MODE GLASS_AUTO
         LIGHT_RHEOSTAT 0
         BUS_SRC 1073741827
@@ -57844,6 +57846,7 @@ GROUP Ecrangauche
         IMAGE gen LED/gen_LEDnewvert
         DATAREF sim/custom/7x/fuel_used3[0]
         SIZE 0.800000
+        LOCKED
         LIGHT_MODE GLASS_AUTO
         LIGHT_RHEOSTAT 0
         BUS_SRC 1073741827
@@ -57862,6 +57865,7 @@ GROUP Ecrangauche
         SHOW_EQUAL 2.000000 [0]
         SHOW_GREATER 0.000000 [0]
         SIZE 0.750000
+        LOCKED
         LIGHT_MODE GLASS_AUTO
         LIGHT_RHEOSTAT 0
         BUS_SRC 1073741825
@@ -57880,6 +57884,7 @@ GROUP Ecrangauche
         SHOW_EQUAL 2.000000 [0]
         SHOW_GREATER 0.000000 [0]
         SIZE 0.750000
+        LOCKED
         LIGHT_MODE GLASS_AUTO
         LIGHT_RHEOSTAT 0
         BUS_SRC 1073741825
@@ -57898,6 +57903,7 @@ GROUP Ecrangauche
         SHOW_EQUAL 2.000000 [0]
         SHOW_GREATER 0.000000 [0]
         SIZE 0.750000
+        LOCKED
         LIGHT_MODE GLASS_AUTO
         LIGHT_RHEOSTAT 0
         BUS_SRC 1073741825
@@ -57916,6 +57922,7 @@ GROUP Ecrangauche
         SHOW_EQUAL 2.000000 [0]
         SHOW_GREATER 0.000000 [0]
         SIZE 0.750000
+        LOCKED
         LIGHT_MODE GLASS_AUTO
         LIGHT_RHEOSTAT 0
         BUS_SRC 1073741825
@@ -57934,6 +57941,7 @@ GROUP Ecrangauche
         SHOW_EQUAL 2.000000 [0]
         SHOW_GREATER 0.000000 [0]
         SIZE 0.750000
+        LOCKED
         LIGHT_MODE GLASS_AUTO
         LIGHT_RHEOSTAT 0
         BUS_SRC 1073741827
@@ -57952,6 +57960,7 @@ GROUP Ecrangauche
         SHOW_EQUAL 2.000000 [0]
         SHOW_GREATER 0.000000 [0]
         SIZE 0.750000
+        LOCKED
         LIGHT_MODE GLASS_AUTO
         LIGHT_RHEOSTAT 0
         BUS_SRC 1073741827
@@ -63907,6 +63916,7 @@ GROUP Screenbasse
       IMAGE Ecranbas/choixecranbas
       DATAREF sim/cockpit/weapons/firing_rate[0]
       LOCKED
+      HIDE
       LIGHT_MODE GLASS_AUTO
       LIGHT_RHEOSTAT 0
       BUS_SRC 1073741827
@@ -65861,6 +65871,8 @@ GROUP Screenbasse
       SHOW_LESS 0.000000 [0]
       SHOW_EQUAL 1.000000 sim/cockpit/weapons/firing_rate[0]
       SHOW_GREATER 0.000000 [0]
+      LOCKED
+      HIDE
       gen_pointer gen_pointeVIB
         POS 833.000000 -234.000000
         IMAGE EG moteur/gen_pointerVIB
@@ -65868,6 +65880,8 @@ GROUP Screenbasse
         SHOW_LESS 0.000000 [0]
         SHOW_EQUAL 1.000000 [0]
         SHOW_GREATER 0.000000 [0]
+        LOCKED
+        HIDE
         CLIP
         LIGHT_MODE GLASS_AUTO
         LIGHT_RHEOSTAT 0
@@ -65886,6 +65900,8 @@ GROUP Screenbasse
         SHOW_LESS 0.000000 [0]
         SHOW_EQUAL 1.000000 [0]
         SHOW_GREATER 0.000000 [0]
+        LOCKED
+        HIDE
         CLIP
         LIGHT_MODE GLASS_AUTO
         LIGHT_RHEOSTAT 0
@@ -65904,6 +65920,8 @@ GROUP Screenbasse
         SHOW_LESS 0.000000 [0]
         SHOW_EQUAL 1.000000 [0]
         SHOW_GREATER 0.000000 [0]
+        LOCKED
+        HIDE
         CLIP
         LIGHT_MODE GLASS_AUTO
         LIGHT_RHEOSTAT 0
@@ -65923,6 +65941,8 @@ GROUP Screenbasse
         SHOW_EQUAL 1.000000 [0]
         SHOW_GREATER 0.000000 [0]
         SIZE 0.500000
+        LOCKED
+        HIDE
         LIGHT_MODE GLASS_AUTO
         LIGHT_RHEOSTAT 0
         BUS_SRC 1073741825
@@ -65946,6 +65966,8 @@ GROUP Screenbasse
         SHOW_LESS 0.000000 [0]
         SHOW_EQUAL 1.000000 [0]
         SHOW_GREATER 0.000000 [0]
+        LOCKED
+        HIDE
         LIGHT_MODE GLASS_AUTO
         LIGHT_RHEOSTAT 0
         BUS_SRC 1073741825
@@ -65963,6 +65985,8 @@ GROUP Screenbasse
         SHOW_LESS 0.000000 [0]
         SHOW_EQUAL 1.000000 [0]
         SHOW_GREATER 0.000000 [0]
+        LOCKED
+        HIDE
         LIGHT_MODE GLASS_AUTO
         LIGHT_RHEOSTAT 0
         BUS_SRC 1073741827
@@ -65978,6 +66002,8 @@ GROUP Screenbasse
         SHOW_LESS 0.000000 [0]
         SHOW_EQUAL 1.000000 [0]
         SHOW_GREATER 0.000000 [0]
+        LOCKED
+        HIDE
         LIGHT_MODE GLASS_AUTO
         LIGHT_RHEOSTAT 0
         BUS_SRC 1073741825
@@ -66000,6 +66026,8 @@ GROUP Screenbasse
         SHOW_EQUAL 1.000000 [0]
         SHOW_GREATER 0.000000 [0]
         SIZE 0.750000
+        LOCKED
+        HIDE
         LIGHT_MODE GLASS_AUTO
         LIGHT_RHEOSTAT 0
         BUS_SRC 1073741827
@@ -66018,6 +66046,8 @@ GROUP Screenbasse
         SHOW_EQUAL 1.000000 [0]
         SHOW_GREATER 0.000000 [0]
         SIZE 0.750000
+        LOCKED
+        HIDE
         LIGHT_MODE GLASS_AUTO
         LIGHT_RHEOSTAT 0
         BUS_SRC 1073741825
@@ -66035,6 +66065,8 @@ GROUP Screenbasse
         SHOW_LESS 0.000000 [0]
         SHOW_EQUAL 1.000000 [0]
         SHOW_GREATER 0.000000 [0]
+        LOCKED
+        HIDE
         LIGHT_MODE GLASS_AUTO
         LIGHT_RHEOSTAT 0
         BUS_SRC 1073741825
@@ -66052,6 +66084,8 @@ GROUP Screenbasse
         SHOW_LESS 0.000000 [0]
         SHOW_EQUAL 1.000000 [0]
         SHOW_GREATER 0.000000 [0]
+        LOCKED
+        HIDE
         LIGHT_MODE GLASS_AUTO
         LIGHT_RHEOSTAT 0
         BUS_SRC 1073741827
@@ -66067,6 +66101,8 @@ GROUP Screenbasse
         SHOW_LESS 0.000000 [0]
         SHOW_EQUAL 1.000000 [0]
         SHOW_GREATER 0.000000 [0]
+        LOCKED
+        HIDE
         LIGHT_MODE GLASS_AUTO
         LIGHT_RHEOSTAT 0
         BUS_SRC 1073741825
@@ -66089,6 +66125,8 @@ GROUP Screenbasse
         SHOW_EQUAL 1.000000 [0]
         SHOW_GREATER 0.000000 [0]
         SIZE 0.750000
+        LOCKED
+        HIDE
         LIGHT_MODE GLASS_AUTO
         LIGHT_RHEOSTAT 0
         BUS_SRC 1073741827
@@ -66107,6 +66145,8 @@ GROUP Screenbasse
         SHOW_EQUAL 1.000000 [0]
         SHOW_GREATER 0.000000 [0]
         SIZE 0.750000
+        LOCKED
+        HIDE
         LIGHT_MODE GLASS_AUTO
         LIGHT_RHEOSTAT 0
         BUS_SRC 1073741827
@@ -66124,6 +66164,8 @@ GROUP Screenbasse
         SHOW_LESS 0.000000 [0]
         SHOW_EQUAL 1.000000 [0]
         SHOW_GREATER 0.000000 [0]
+        LOCKED
+        HIDE
         LIGHT_MODE GLASS_AUTO
         LIGHT_RHEOSTAT 0
         BUS_SRC 1073741825
@@ -66141,6 +66183,8 @@ GROUP Screenbasse
         SHOW_LESS 0.000000 [0]
         SHOW_EQUAL 1.000000 [0]
         SHOW_GREATER 0.000000 [0]
+        LOCKED
+        HIDE
         LIGHT_MODE GLASS_AUTO
         LIGHT_RHEOSTAT 0
         BUS_SRC 1073741827
@@ -66156,6 +66200,8 @@ GROUP Screenbasse
         SHOW_LESS 0.000000 [0]
         SHOW_EQUAL 1.000000 [0]
         SHOW_GREATER 0.000000 [0]
+        LOCKED
+        HIDE
         LIGHT_MODE GLASS_AUTO
         LIGHT_RHEOSTAT 0
         BUS_SRC 1073741825
@@ -66178,6 +66224,8 @@ GROUP Screenbasse
         SHOW_EQUAL 1.000000 [0]
         SHOW_GREATER 0.000000 [0]
         SIZE 0.750000
+        LOCKED
+        HIDE
         LIGHT_MODE GLASS_AUTO
         LIGHT_RHEOSTAT 0
         BUS_SRC 1073741827
@@ -66196,6 +66244,8 @@ GROUP Screenbasse
         SHOW_EQUAL 1.000000 [0]
         SHOW_GREATER 0.000000 [0]
         SIZE 0.750000
+        LOCKED
+        HIDE
         LIGHT_MODE GLASS_AUTO
         LIGHT_RHEOSTAT 0
         BUS_SRC 1073741825
@@ -66213,6 +66263,8 @@ GROUP Screenbasse
         SHOW_LESS 0.000000 [0]
         SHOW_EQUAL 1.000000 [0]
         SHOW_GREATER 0.000000 [0]
+        LOCKED
+        HIDE
         LIGHT_MODE GLASS_AUTO
         LIGHT_RHEOSTAT 0
         BUS_SRC 1073741825
@@ -66232,6 +66284,8 @@ GROUP Screenbasse
         SHOW_LESS 0.000000 [0]
         SHOW_EQUAL 1.000000 [0]
         SHOW_GREATER 0.000000 [0]
+        LOCKED
+        HIDE
         LIGHT_MODE GLASS_AUTO
         LIGHT_RHEOSTAT 0
         BUS_SRC 1073741825
@@ -66248,6 +66302,8 @@ GROUP Screenbasse
         SHOW_EQUAL 1.000000 [0]
         SHOW_GREATER 0.000000 [0]
         SIZE 0.750000
+        LOCKED
+        HIDE
         LIGHT_MODE GLASS_AUTO
         LIGHT_RHEOSTAT 0
         BUS_SRC 1073741825
@@ -66266,6 +66322,8 @@ GROUP Screenbasse
         SHOW_EQUAL 1.000000 [0]
         SHOW_GREATER 0.000000 [0]
         SIZE 0.750000
+        LOCKED
+        HIDE
         LIGHT_MODE GLASS_AUTO
         LIGHT_RHEOSTAT 0
         BUS_SRC 1073741825
@@ -66283,6 +66341,8 @@ GROUP Screenbasse
         SHOW_LESS 0.000000 [0]
         SHOW_EQUAL 1.000000 [0]
         SHOW_GREATER 0.000000 [0]
+        LOCKED
+        HIDE
         LIGHT_MODE GLASS_AUTO
         LIGHT_RHEOSTAT 0
         BUS_SRC 1073741825
@@ -66302,6 +66362,8 @@ GROUP Screenbasse
         SHOW_LESS 0.000000 [0]
         SHOW_EQUAL 1.000000 [0]
         SHOW_GREATER 0.000000 [0]
+        LOCKED
+        HIDE
         LIGHT_MODE GLASS_AUTO
         LIGHT_RHEOSTAT 0
         BUS_SRC 1073741825
@@ -66318,6 +66380,8 @@ GROUP Screenbasse
         SHOW_EQUAL 1.000000 [0]
         SHOW_GREATER 0.000000 [0]
         SIZE 0.750000
+        LOCKED
+        HIDE
         LIGHT_MODE GLASS_AUTO
         LIGHT_RHEOSTAT 0
         BUS_SRC 1073741825
@@ -66336,6 +66400,8 @@ GROUP Screenbasse
         SHOW_EQUAL 1.000000 [0]
         SHOW_GREATER 0.000000 [0]
         SIZE 0.750000
+        LOCKED
+        HIDE
         LIGHT_MODE GLASS_AUTO
         LIGHT_RHEOSTAT 0
         BUS_SRC 1073741825
@@ -66353,6 +66419,8 @@ GROUP Screenbasse
         SHOW_LESS 0.000000 [0]
         SHOW_EQUAL 1.000000 [0]
         SHOW_GREATER 0.000000 [0]
+        LOCKED
+        HIDE
         LIGHT_MODE GLASS_AUTO
         LIGHT_RHEOSTAT 0
         BUS_SRC 1073741825
@@ -66372,6 +66440,8 @@ GROUP Screenbasse
         SHOW_LESS 0.000000 [0]
         SHOW_EQUAL 1.000000 [0]
         SHOW_GREATER 0.000000 [0]
+        LOCKED
+        HIDE
         LIGHT_MODE GLASS_AUTO
         LIGHT_RHEOSTAT 0
         BUS_SRC 1073741825
@@ -66388,6 +66458,8 @@ GROUP Screenbasse
         SHOW_EQUAL 1.000000 [0]
         SHOW_GREATER 0.000000 [0]
         SIZE 0.750000
+        LOCKED
+        HIDE
         LIGHT_MODE GLASS_AUTO
         LIGHT_RHEOSTAT 0
         BUS_SRC 1073741825
@@ -66406,6 +66478,8 @@ GROUP Screenbasse
         SHOW_EQUAL 1.000000 [0]
         SHOW_GREATER 0.000000 [0]
         SIZE 0.750000
+        LOCKED
+        HIDE
         LIGHT_MODE GLASS_AUTO
         LIGHT_RHEOSTAT 0
         BUS_SRC 1073741825
@@ -66423,6 +66497,8 @@ GROUP Screenbasse
         SHOW_LESS 0.000000 [0]
         SHOW_EQUAL 1.000000 [0]
         SHOW_GREATER 0.000000 [0]
+        LOCKED
+        HIDE
         CLIP
         LIGHT_MODE GLASS_AUTO
         LIGHT_RHEOSTAT 0
@@ -66441,6 +66517,8 @@ GROUP Screenbasse
         SHOW_LESS 0.000000 [0]
         SHOW_EQUAL 1.000000 [0]
         SHOW_GREATER 0.000000 [0]
+        LOCKED
+        HIDE
         CLIP
         LIGHT_MODE GLASS_AUTO
         LIGHT_RHEOSTAT 0
@@ -66459,6 +66537,8 @@ GROUP Screenbasse
         SHOW_LESS 0.000000 [0]
         SHOW_EQUAL 1.000000 [0]
         SHOW_GREATER 0.000000 [0]
+        LOCKED
+        HIDE
         CLIP
         LIGHT_MODE GLASS_AUTO
         LIGHT_RHEOSTAT 0
@@ -66478,6 +66558,8 @@ GROUP Screenbasse
         SHOW_EQUAL 1.000000 [0]
         SHOW_GREATER 0.000000 [0]
         SIZE 0.750000
+        LOCKED
+        HIDE
         LIGHT_MODE GLASS_AUTO
         LIGHT_RHEOSTAT 0
         BUS_SRC 1073741825
@@ -66496,6 +66578,8 @@ GROUP Screenbasse
         SHOW_EQUAL 1.000000 [0]
         SHOW_GREATER 0.000000 [0]
         SIZE 0.750000
+        LOCKED
+        HIDE
         LIGHT_MODE GLASS_AUTO
         LIGHT_RHEOSTAT 0
         BUS_SRC 1073741825
@@ -66514,6 +66598,8 @@ GROUP Screenbasse
         SHOW_EQUAL 1.000000 [0]
         SHOW_GREATER 0.000000 [0]
         SIZE 0.750000
+        LOCKED
+        HIDE
         LIGHT_MODE GLASS_AUTO
         LIGHT_RHEOSTAT 0
         BUS_SRC 1073741825
@@ -66532,6 +66618,8 @@ GROUP Screenbasse
         SHOW_EQUAL 1.000000 [0]
         SHOW_GREATER 0.000000 [0]
         SIZE 0.750000
+        LOCKED
+        HIDE
         LIGHT_MODE GLASS_AUTO
         LIGHT_RHEOSTAT 0
         BUS_SRC 1073741825
@@ -66550,6 +66638,8 @@ GROUP Screenbasse
         SHOW_EQUAL 1.000000 [0]
         SHOW_GREATER 0.000000 [0]
         SIZE 0.750000
+        LOCKED
+        HIDE
         LIGHT_MODE GLASS_AUTO
         LIGHT_RHEOSTAT 0
         BUS_SRC 1073741825
@@ -66568,6 +66658,8 @@ GROUP Screenbasse
         SHOW_EQUAL 1.000000 [0]
         SHOW_GREATER 0.000000 [0]
         SIZE 0.750000
+        LOCKED
+        HIDE
         LIGHT_MODE GLASS_AUTO
         LIGHT_RHEOSTAT 0
         BUS_SRC 1073741825
@@ -66586,6 +66678,8 @@ GROUP Screenbasse
         SHOW_EQUAL 1.000000 [0]
         SHOW_GREATER 0.000000 [0]
         SIZE 0.500000
+        LOCKED
+        HIDE
         CLIP
         LIGHT_MODE GLASS_AUTO
         LIGHT_RHEOSTAT 0
@@ -66597,24 +66691,6 @@ GROUP Screenbasse
         IS_VERTICAL 1
         OFFSET 0.000000
 
-      gen_LED T5
-        POS 974.000000 -63.000000
-        IMAGE gen LED/gen_LEDnewvert
-        DATAREF sim/cockpit2/electrical/APU_EGT_c[0]
-        SHOW_LESS 0.000000 [0]
-        SHOW_EQUAL 1.000000 [0]
-        SHOW_GREATER 0.000000 [0]
-        SIZE 0.800000
-        LIGHT_MODE GLASS_AUTO
-        LIGHT_RHEOSTAT 0
-        BUS_SRC 1073741825
-        KEY_FRAME 0.000000 0.000000 1.000000
-        KEY_FRAME 1.000000 1.000000
-        DIGITS 3
-        DECIMALS 0
-        PERIOD_WIDTH 0
-        LED_ROWS 0
-
       gen_pointer gen_pointertemp 2 2
         POS 755.000000 -216.000000
         IMAGE EG moteur/gen_pointertemp
@@ -66623,6 +66699,8 @@ GROUP Screenbasse
         SHOW_EQUAL 1.000000 [0]
         SHOW_GREATER 0.000000 [0]
         SIZE 0.500000
+        LOCKED
+        HIDE
         CLIP
         LIGHT_MODE GLASS_AUTO
         LIGHT_RHEOSTAT 0
@@ -66642,6 +66720,8 @@ GROUP Screenbasse
         SHOW_EQUAL 1.000000 [0]
         SHOW_GREATER 0.000000 [0]
         SIZE 0.500000
+        LOCKED
+        HIDE
         CLIP
         LIGHT_MODE GLASS_AUTO
         LIGHT_RHEOSTAT 0
@@ -66661,6 +66741,8 @@ GROUP Screenbasse
         SHOW_EQUAL 1.000000 [0]
         SHOW_GREATER 0.000000 [0]
         SIZE 0.750000
+        LOCKED
+        HIDE
         LIGHT_MODE GLASS_AUTO
         LIGHT_RHEOSTAT 0
         BUS_SRC 1073741825
@@ -66679,6 +66761,8 @@ GROUP Screenbasse
         SHOW_EQUAL 1.000000 [0]
         SHOW_GREATER 0.000000 [0]
         SIZE 0.750000
+        LOCKED
+        HIDE
         LIGHT_MODE GLASS_AUTO
         LIGHT_RHEOSTAT 0
         BUS_SRC 1073741827
@@ -66697,6 +66781,8 @@ GROUP Screenbasse
         SHOW_EQUAL 1.000000 [0]
         SHOW_GREATER 0.000000 [0]
         SIZE 0.750000
+        LOCKED
+        HIDE
         LIGHT_MODE GLASS_AUTO
         LIGHT_RHEOSTAT 0
         BUS_SRC 1073741827
@@ -66712,6 +66798,8 @@ GROUP Screenbasse
         IMAGE bouton/offon
         DATAREF 
         SHOW_EQUAL 1.000000 sim/cockpit2/ice/ice_inlet_heat_on_per_engine[0]
+        LOCKED
+        HIDE
         LIGHT_MODE GLASS_AUTO
         LIGHT_RHEOSTAT 0
         BUS_SRC 1073741826
@@ -66723,6 +66811,8 @@ GROUP Screenbasse
         IMAGE bouton/offon
         DATAREF 
         SHOW_EQUAL 1.000000 sim/cockpit2/ice/ice_inlet_heat_on_per_engine[1]
+        LOCKED
+        HIDE
         LIGHT_MODE GLASS_AUTO
         LIGHT_RHEOSTAT 0
         BUS_SRC 1073741826
@@ -66734,6 +66824,8 @@ GROUP Screenbasse
         IMAGE bouton/offon
         DATAREF 
         SHOW_EQUAL 1.000000 sim/cockpit2/ice/ice_inlet_heat_on_per_engine[2]
+        LOCKED
+        HIDE
         LIGHT_MODE GLASS_AUTO
         LIGHT_RHEOSTAT 0
         BUS_SRC 1073741826
@@ -66745,6 +66837,8 @@ GROUP Screenbasse
         IMAGE EG moteur/start
         DATAREF 
         SHOW_EQUAL 1.000000 sim/custom/7x/flageng0
+        LOCKED
+        HIDE
         LIGHT_MODE GLASS_AUTO
         LIGHT_RHEOSTAT 0
         BUS_SRC 1073741826
@@ -66766,6 +66860,8 @@ GROUP Screenbasse
         IMAGE EG moteur/start
         DATAREF 
         SHOW_EQUAL 1.000000 sim/custom/7x/flageng1
+        LOCKED
+        HIDE
         LIGHT_MODE GLASS_AUTO
         LIGHT_RHEOSTAT 0
         BUS_SRC 1073741826
@@ -66787,6 +66883,8 @@ GROUP Screenbasse
         IMAGE EG moteur/start
         DATAREF 
         SHOW_EQUAL 1.000000 sim/custom/7x/flageng2
+        LOCKED
+        HIDE
         LIGHT_MODE GLASS_AUTO
         LIGHT_RHEOSTAT 0
         BUS_SRC 1073741826
@@ -66804,13 +66902,15 @@ GROUP Screenbasse
         CLICK_DY 0
 
       gen_LED N1% 2
-        POS 919.000000 -63.000000
+        POS 919.000000 -62.000000
         IMAGE gen LED/gen_LEDnewvert
         DATAREF sim/cockpit2/electrical/APU_N1_percent[0]
         SHOW_LESS 0.000000 [0]
         SHOW_EQUAL 1.000000 [0]
         SHOW_GREATER 0.000000 [0]
         SIZE 0.800000
+        LOCKED
+        HIDE
         LIGHT_MODE GLASS_AUTO
         LIGHT_RHEOSTAT 0
         BUS_SRC 1073741825
