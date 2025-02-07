@@ -38,6 +38,7 @@ local fuelstart = 0
 local fuelutilise = 0
 fuelstart = get(fuel_total)
 set(fuel_used, 0)
+set(fuel_reset, 1)
 local prA = 0
 local flagAIwing = 0 -- 
 local flagapu1 = 0
@@ -333,7 +334,8 @@ function update()
     if get(SOV2) == 0 then set(mix2, 0) end
 
     if get(fuel_reset) == 1 then
-        fuelstart = fuelactuel
+        fuelstart = get(fuel_total)
+        set(fuel_reset, 0)
     else
         fuelactuel = get(fuel_total)
         fuelutilise = fuelstart - fuelactuel
