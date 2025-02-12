@@ -3,6 +3,28 @@ size = {2048, 1024}
 -- Z
 z_eng1_oil_press_override = createGlobalPropertyi(
                                 "sim/custom/7x/z_eng1_oil_press_override", 0)
+
+createProp("sim/custom/7x/z_syn_eng_start1", "int")
+createProp("sim/custom/7x/z_syn_eng_start2", "int")
+createProp("sim/custom/7x/z_syn_eng_start3", "int")
+defineProperty("z_syn_eng_start1",
+               globalPropertyi("sim/custom/7x/z_syn_eng_start1"))
+defineProperty("z_syn_eng_start2",
+               globalPropertyi("sim/custom/7x/z_syn_eng_start2"))
+defineProperty("z_syn_eng_start3",
+               globalPropertyi("sim/custom/7x/z_syn_eng_start3"))
+
+createProp("sim/custom/7x/z_syn_eng_ign1", "int")
+createProp("sim/custom/7x/z_syn_eng_ign2", "int")
+createProp("sim/custom/7x/z_syn_eng_ign3", "int")
+
+defineProperty("z_syn_eng_ign1",
+               globalPropertyi("sim/custom/7x/z_syn_eng_ign1"))
+defineProperty("z_syn_eng_ign2",
+               globalPropertyi("sim/custom/7x/z_syn_eng_ign2"))
+defineProperty("z_syn_eng_ign3",
+               globalPropertyi("sim/custom/7x/z_syn_eng_ign3"))
+
 z_eng1_oil_press = createGlobalPropertyf("sim/custom/7x/z_eng1_oil_press", 0)
 z_original_eng1_oil_press = globalPropertyf(
                                 "sim/cockpit2/engine/indicators/oil_pressure_psi")
@@ -543,6 +565,12 @@ set(fuel_used3, 0)
 set(radio, 1)
 set(sellss, 1)
 set(WX, 1)
+set(z_syn_eng_start1, 0)
+set(z_syn_eng_start2, 0)
+set(z_syn_eng_start3, 0)
+set(z_syn_eng_ign1, 0)
+set(z_syn_eng_ign2, 0)
+set(z_syn_eng_ign3, 0)
 
 if get(debuter) == 0 then
     set(gen0, 1)
