@@ -35,6 +35,19 @@ defineProperty("z_syn_eng_ab2",
 defineProperty("z_syn_eng_ab3",
                globalPropertyi("sim/custom/7x/z_syn_eng_ab3"))
 
+createProp("sim/custom/7x/z_line_gen2_on", "int")
+createProp("sim/custom/7x/z_line_bat2_ratgen_on", "int")
+createProp("sim/custom/7x/z_line_apu_bat1_on", "int")
+createProp("sim/custom/7x/z_line_gen1_gen3_on", "int")
+defineProperty("z_line_gen2_on",
+               globalPropertyi("sim/custom/7x/z_line_gen2_on"))
+defineProperty("z_line_bat2_ratgen_on",
+               globalPropertyi("sim/custom/7x/z_line_bat2_ratgen_on"))
+defineProperty("z_line_apu_bat1_on",
+               globalPropertyi("sim/custom/7x/z_line_apu_bat1_on"))
+defineProperty("z_line_gen1_gen3_on",
+               globalPropertyi("sim/custom/7x/z_line_gen1_gen3_on"))
+
 z_eng1_oil_press = createGlobalPropertyf("sim/custom/7x/z_eng1_oil_press", 0)
 z_original_eng1_oil_press = globalPropertyf(
                                 "sim/cockpit2/engine/indicators/oil_pressure_psi")
@@ -584,6 +597,11 @@ set(z_syn_eng_ign3, 0)
 set(z_syn_eng_ab1, 0)
 set(z_syn_eng_ab2, 0)
 set(z_syn_eng_ab3, 0)
+
+set(z_line_gen2_on, 0)
+set(z_line_bat2_ratgen_on, 0)
+set(z_line_apu_bat1_on, 0)
+set(z_line_gen1_gen3_on, 0)
 
 if get(debuter) == 0 then
     set(gen0, 1)
