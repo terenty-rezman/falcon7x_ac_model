@@ -51,6 +51,12 @@ defineProperty("z_line_gen1_gen3_on",
 z_eng1_oil_press = createGlobalPropertyf("sim/custom/7x/z_eng1_oil_press", 0)
 z_original_eng1_oil_press = globalPropertyf(
                                 "sim/cockpit2/engine/indicators/oil_pressure_psi")
+
+z_apu_startup_stage = createGlobalPropertyi("sim/custom/7x/z_apu_startup_stage", 0)
+
+z_oil_min_height_1 = createGlobalPropertyi("sim/custom/7x/z_oil_min_height_1", 0)
+z_oil_min_height_2 = createGlobalPropertyi("sim/custom/7x/z_oil_min_height_2", 0)
+z_oil_min_height_3 = createGlobalPropertyi("sim/custom/7x/z_oil_min_height_3", 0)
 -- Z
 
 createProp("sim/custom/7x/checklist", "int")
@@ -602,6 +608,10 @@ set(z_line_gen2_on, 0)
 set(z_line_bat2_ratgen_on, 0)
 set(z_line_apu_bat1_on, 0)
 set(z_line_gen1_gen3_on, 0)
+set(z_apu_startup_stage, 0)
+set(z_oil_min_height_1, 0)
+set(z_oil_min_height_2, 0)
+set(z_oil_min_height_3, 0)
 
 if get(debuter) == 0 then
     set(gen0, 1)
