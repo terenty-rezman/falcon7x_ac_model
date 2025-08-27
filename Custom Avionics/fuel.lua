@@ -329,6 +329,9 @@ function update()
         set(mix2, 1)
     end
 
+    if get(z_fuel_digital_1) == 0 then set(mix0, 0) end
+    if get(z_fuel_digital_2) == 0 then set(mix1, 0) end
+    if get(z_fuel_digital_3) == 0 then set(mix2, 0) end
     if get(SOV0) == 0 then set(mix0, 0) end
     if get(SOV1) == 0 then set(mix1, 0) end
     if get(SOV2) == 0 then set(mix2, 0) end

@@ -57,6 +57,17 @@ z_apu_startup_stage = createGlobalPropertyi("sim/custom/7x/z_apu_startup_stage",
 z_oil_min_height_1 = createGlobalPropertyi("sim/custom/7x/z_oil_min_height_1", 0)
 z_oil_min_height_2 = createGlobalPropertyi("sim/custom/7x/z_oil_min_height_2", 0)
 z_oil_min_height_3 = createGlobalPropertyi("sim/custom/7x/z_oil_min_height_3", 0)
+
+z_left_black_screen = createGlobalPropertyi("sim/custom/7x/z_left_black_screen", 0)
+z_right_black_screen = createGlobalPropertyi("sim/custom/7x/z_right_black_screen", 0)
+z_middle_up_black_screen = createGlobalPropertyi("sim/custom/7x/z_middle_up_black_screen", 0)
+z_middle_down_black_screen = createGlobalPropertyi("sim/custom/7x/z_middle_down_black_screen", 0)
+z_mini_black_screen = createGlobalPropertyi("sim/custom/7x/z_mini_black_screen", 0)
+
+-- disable & enable fuel flow to engines from python
+defineProperty("z_fuel_digital_1", createGlobalPropertyi("sim/custom/7x/z_fuel_digital_1", 1))
+defineProperty("z_fuel_digital_2", createGlobalPropertyi("sim/custom/7x/z_fuel_digital_2", 1))
+defineProperty("z_fuel_digital_3", createGlobalPropertyi("sim/custom/7x/z_fuel_digital_3", 1))
 -- Z
 
 createProp("sim/custom/7x/checklist", "int")
@@ -612,6 +623,14 @@ set(z_apu_startup_stage, 0)
 set(z_oil_min_height_1, 0)
 set(z_oil_min_height_2, 0)
 set(z_oil_min_height_3, 0)
+set(z_left_black_screen, 0)
+set(z_right_black_screen, 0)
+set(z_middle_up_black_screen, 0)
+set(z_middle_down_black_screen, 0)
+set(z_mini_black_screen, 0)
+set(z_fuel_digital_1, 1)
+set(z_fuel_digital_2, 1)
+set(z_fuel_digital_3, 1)
 
 if get(debuter) == 0 then
     set(gen0, 1)
