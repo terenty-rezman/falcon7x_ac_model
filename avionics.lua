@@ -73,6 +73,10 @@ defineProperty("z_fuel_digital_3", createGlobalPropertyi("sim/custom/7x/z_fuel_d
 defineProperty("z_thrust_purple_max_deg_1", createGlobalPropertyi("sim/custom/7x/z_thrust_purple_max_deg_1", 75))
 defineProperty("z_thrust_purple_max_deg_2", createGlobalPropertyi("sim/custom/7x/z_thrust_purple_max_deg_2", 75))
 defineProperty("z_thrust_purple_max_deg_3", createGlobalPropertyi("sim/custom/7x/z_thrust_purple_max_deg_3", 75))
+
+-- ads
+defineProperty("z_ads_pilot", createGlobalPropertyi("sim/custom/7x/z_ads_pilot", 1))
+defineProperty("z_ads_copilot", createGlobalPropertyi("sim/custom/7x/z_ads_copilot", 3))
 -- Z
 
 createProp("sim/custom/7x/checklist", "int")
