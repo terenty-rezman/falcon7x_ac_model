@@ -77,6 +77,7 @@ defineProperty("z_thrust_purple_max_deg_3", createGlobalPropertyi("sim/custom/7x
 -- ads
 defineProperty("z_ads_pilot", createGlobalPropertyi("sim/custom/7x/z_ads_pilot", 1))
 defineProperty("z_ads_copilot", createGlobalPropertyi("sim/custom/7x/z_ads_copilot", 2))
+defineProperty("z_ads_fail_id", createGlobalPropertyi("sim/custom/7x/z_ads_fail", 0))
 -- irs
 defineProperty("z_irs_pilot", createGlobalPropertyi("sim/custom/7x/z_irs_pilot", 1))
 defineProperty("z_irs_copilot", createGlobalPropertyi("sim/custom/7x/z_irs_copilot", 2))
