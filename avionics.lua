@@ -87,6 +87,9 @@ defineProperty("z_fms_copilot", createGlobalPropertyi("sim/custom/7x/z_fms_copil
 -- ra
 defineProperty("z_ra_pilot", createGlobalPropertyi("sim/custom/7x/z_ra_pilot", 1))
 defineProperty("z_ra_copilot", createGlobalPropertyi("sim/custom/7x/z_ra_copilot", 2))
+-- vor
+defineProperty("z_vor_pilot", createGlobalPropertyi("sim/custom/7x/z_vor_pilot", 1))
+defineProperty("z_vor_copilot", createGlobalPropertyi("sim/custom/7x/z_vor_copilot", 2))
 -- Z
 
 createProp("sim/custom/7x/checklist", "int")
