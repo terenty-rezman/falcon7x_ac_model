@@ -81,8 +81,13 @@ defineProperty("z_ads_fail_id", createGlobalPropertyi("sim/custom/7x/z_ads_fail"
 -- irs
 defineProperty("z_irs_pilot", createGlobalPropertyi("sim/custom/7x/z_irs_pilot", 1))
 defineProperty("z_irs_copilot", createGlobalPropertyi("sim/custom/7x/z_irs_copilot", 2))
+-- fms
+defineProperty("z_fms_pilot", createGlobalPropertyi("sim/custom/7x/z_fms_pilot", 1))
+defineProperty("z_fms_copilot", createGlobalPropertyi("sim/custom/7x/z_fms_copilot", 2))
+-- ra
+defineProperty("z_ra_pilot", createGlobalPropertyi("sim/custom/7x/z_ra_pilot", 1))
+defineProperty("z_ra_copilot", createGlobalPropertyi("sim/custom/7x/z_ra_copilot", 2))
 -- Z
-
 
 createProp("sim/custom/7x/checklist", "int")
 defineProperty("checklist", globalPropertyi("sim/custom/7x/checklist"))
