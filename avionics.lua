@@ -90,6 +90,8 @@ defineProperty("z_ra_copilot", createGlobalPropertyi("sim/custom/7x/z_ra_copilot
 -- vor
 defineProperty("z_vor_pilot", createGlobalPropertyi("sim/custom/7x/z_vor_pilot", 1))
 defineProperty("z_vor_copilot", createGlobalPropertyi("sim/custom/7x/z_vor_copilot", 2))
+-- no slip compensation ads number
+defineProperty("z_no_slip_comp", createGlobalPropertyi("sim/custom/7x/z_no_slip_comp", 0))
 -- Z
 
 createProp("sim/custom/7x/checklist", "int")
