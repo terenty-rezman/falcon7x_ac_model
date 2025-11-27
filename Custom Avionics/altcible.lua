@@ -133,12 +133,14 @@ function update()
     if get(cabmaster) == 0 then set(galmaster, 0) end
     --
 
-    if get(rhmaster) == 1 then
-        set(dump, 0)
-        set(ventb, 3)
-        set(AIAOAcop, 1)
-        set(heatwind, 1)
-    end
+    -- exlim zakomentili
+    -- if get(rhmaster) == 1 then
+    --     set(dump, 0)
+    --     set(ventb, 3)
+    --     set(AIAOAcop, 1)
+    --     set(heatwind, 1)
+    -- end
+
     if get(bat) == 0 then
         set(flydir, 0)
         set(lhisol, 0)
