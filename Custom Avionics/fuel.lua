@@ -480,7 +480,7 @@ function update()
         set(starteng1, 4) -- d 
         set(fpump0, 1) -- s
         if N1gauche > 15 then
-            set(fpump0, 2) -- s
+            -- set(fpump0, 2) -- s
             set(bleedl, 1) -- s
             set(flageng0, 0)
         end
@@ -499,7 +499,7 @@ function update()
         set(starteng2, 4)
         set(fpump1, 1)
         if N1central > 15 then
-            set(fpump1, 2)
+            -- set(fpump1, 2)
             set(bleedc, 1)
             set(flageng1, 0)
             -- flag = 1
@@ -519,7 +519,7 @@ function update()
         set(starteng3, 4)
         set(fpump2, 1)
         if N1droit > 15 then
-            set(fpump2, 2)
+            -- set(fpump2, 2)
             set(bleedr, 1)
             set(flageng2, 0)
         end
