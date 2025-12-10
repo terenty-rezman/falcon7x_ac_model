@@ -117,6 +117,8 @@ defineProperty("z_fuel_eng2", createGlobalPropertyi("sim/custom/7x/z_fuel_eng2",
 defineProperty("z_fuel_eng3", createGlobalPropertyi("sim/custom/7x/z_fuel_eng3", 0))
 defineProperty("z_fuel_apu", createGlobalPropertyi("sim/custom/7x/z_fuel_apu", 0))
 defineProperty("z_rat_manual", createGlobalPropertyi("sim/custom/7x/z_rat_manual", 0))
+defineProperty("z_et_timer_left", createGlobalPropertyi("sim/custom/7x/z_et_timer_left", 0)) -- secs
+defineProperty("z_et_timer_right", createGlobalPropertyi("sim/custom/7x/z_et_timer_right", 0)) -- secs
 -- Z
 
 createProp("sim/custom/7x/checklist", "int")
