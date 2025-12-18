@@ -119,6 +119,32 @@ defineProperty("z_fuel_apu", createGlobalPropertyi("sim/custom/7x/z_fuel_apu", 0
 defineProperty("z_rat_manual", createGlobalPropertyi("sim/custom/7x/z_rat_manual", 0))
 defineProperty("z_et_timer_left", createGlobalPropertyi("sim/custom/7x/z_et_timer_left", 0)) -- secs
 defineProperty("z_et_timer_right", createGlobalPropertyi("sim/custom/7x/z_et_timer_right", 0)) -- secs
+
+-- hyd tab
+defineProperty("z_hyd_pump_a1", createGlobalPropertyi("sim/custom/7x/z_hyd_pump_a1", 0))
+defineProperty("z_hyd_pump_a3", createGlobalPropertyi("sim/custom/7x/z_hyd_pump_a3", 0))
+defineProperty("z_hyd_pump_bu", createGlobalPropertyi("sim/custom/7x/z_hyd_pump_bu", 0))
+defineProperty("z_hyd_pump_b2", createGlobalPropertyi("sim/custom/7x/z_hyd_pump_b2", 0))
+defineProperty("z_hyd_pump_b3", createGlobalPropertyi("sim/custom/7x/z_hyd_pump_b3", 0))
+defineProperty("z_hyd_pump_c2", createGlobalPropertyi("sim/custom/7x/z_hyd_pump_c2", 0))
+
+defineProperty("z_hyd_pump_a1_text", createGlobalPropertyi("sim/custom/7x/z_hyd_pump_a1_text", 0))
+defineProperty("z_hyd_pump_a3_text", createGlobalPropertyi("sim/custom/7x/z_hyd_pump_a3_text", 0))
+defineProperty("z_hyd_pump_bu_text", createGlobalPropertyi("sim/custom/7x/z_hyd_pump_bu_text", 0))
+defineProperty("z_hyd_pump_b2_text", createGlobalPropertyi("sim/custom/7x/z_hyd_pump_b2_text", 0))
+defineProperty("z_hyd_pump_b3_text", createGlobalPropertyi("sim/custom/7x/z_hyd_pump_b3_text", 0))
+defineProperty("z_hyd_pump_c2_text", createGlobalPropertyi("sim/custom/7x/z_hyd_pump_c2_text", 0))
+
+defineProperty("z_hyd_pipe_a1", createGlobalPropertyi("sim/custom/7x/z_hyd_pipe_a1", 0))
+defineProperty("z_hyd_pipe_a3", createGlobalPropertyi("sim/custom/7x/z_hyd_pipe_a3", 0))
+defineProperty("z_hyd_pipe_a1a3", createGlobalPropertyi("sim/custom/7x/z_hyd_pipe_a1a3", 0))
+defineProperty("z_hyd_pipe_b2", createGlobalPropertyi("sim/custom/7x/z_hyd_pipe_b2", 0))
+defineProperty("z_hyd_pipe_b3", createGlobalPropertyi("sim/custom/7x/z_hyd_pipe_b3", 0))
+defineProperty("z_hyd_pipe_b2b3", createGlobalPropertyi("sim/custom/7x/z_hyd_pipe_b2b3", 0))
+defineProperty("z_hyd_pipe_c2", createGlobalPropertyi("sim/custom/7x/z_hyd_pipe_c2", 0))
+defineProperty("z_hyd_pipe_ebha", createGlobalPropertyi("sim/custom/7x/z_hyd_pipe_ebha", 0))
+defineProperty("z_hyd_pipe_brake2", createGlobalPropertyi("sim/custom/7x/z_hyd_pipe_brake2", 0))
+defineProperty("z_hyd_pipe_bu", createGlobalPropertyi("sim/custom/7x/z_hyd_pipe_bu", 0))
 -- Z
 
 createProp("sim/custom/7x/checklist", "int")
