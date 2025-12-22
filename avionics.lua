@@ -145,6 +145,9 @@ defineProperty("z_hyd_pipe_c2", createGlobalPropertyi("sim/custom/7x/z_hyd_pipe_
 defineProperty("z_hyd_pipe_ebha", createGlobalPropertyi("sim/custom/7x/z_hyd_pipe_ebha", 0))
 defineProperty("z_hyd_pipe_brake2", createGlobalPropertyi("sim/custom/7x/z_hyd_pipe_brake2", 0))
 defineProperty("z_hyd_pipe_bu", createGlobalPropertyi("sim/custom/7x/z_hyd_pipe_bu", 0))
+
+-- 0 - park; 1 - taxi; 2 - cruise; 3 - to; 4 - land;
+defineProperty("z_flight_regime", createGlobalPropertyi("sim/custom/7x/z_flight_regime", 0))
 -- Z
 
 createProp("sim/custom/7x/checklist", "int")
