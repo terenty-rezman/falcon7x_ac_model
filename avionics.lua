@@ -159,6 +159,15 @@ defineProperty("z_right_screen_brightness", createGlobalPropertyi("sim/custom/7x
 defineProperty("z_up_screen_brightness", createGlobalPropertyi("sim/custom/7x/z_up_screen_brightness", 50))
 defineProperty("z_down_screen_brightness", createGlobalPropertyi("sim/custom/7x/z_down_screen_brightness", 50))
 defineProperty("z_mini_screen_brightness", createGlobalPropertyi("sim/custom/7x/z_mini_screen_brightness", 50))
+
+defineProperty("z_fcs_mfcc_1", createGlobalPropertyi("sim/custom/7x/z_fcs_mfcc_1", 0))
+defineProperty("z_fcs_mfcc_2", createGlobalPropertyi("sim/custom/7x/z_fcs_mfcc_2", 0))
+defineProperty("z_fcs_mfcc_3", createGlobalPropertyi("sim/custom/7x/z_fcs_mfcc_3", 0))
+defineProperty("z_fcs_mfcc", createGlobalPropertyi("sim/custom/7x/z_fcs_mfcc", 0))
+defineProperty("z_fcs_sfcc_1", createGlobalPropertyi("sim/custom/7x/z_fcs_sfcc_1", 0))
+defineProperty("z_fcs_sfcc_2", createGlobalPropertyi("sim/custom/7x/z_fcs_sfcc_2", 0))
+defineProperty("z_fcs_sfcc_3", createGlobalPropertyi("sim/custom/7x/z_fcs_sfcc_3", 0))
+defineProperty("z_fcs_sfcc", createGlobalPropertyi("sim/custom/7x/z_fcs_sfcc", 0))
 -- Z
 
 createProp("sim/custom/7x/checklist", "int")
