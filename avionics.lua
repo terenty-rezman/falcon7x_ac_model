@@ -146,8 +146,19 @@ defineProperty("z_hyd_pipe_ebha", createGlobalPropertyi("sim/custom/7x/z_hyd_pip
 defineProperty("z_hyd_pipe_brake2", createGlobalPropertyi("sim/custom/7x/z_hyd_pipe_brake2", 0))
 defineProperty("z_hyd_pipe_bu", createGlobalPropertyi("sim/custom/7x/z_hyd_pipe_bu", 0))
 
+defineProperty("z_hyd_text_om_slats", createGlobalPropertyi("sim/custom/7x/z_hyd_text_om_slats", 0))
+defineProperty("z_hyd_text_rh_ail", createGlobalPropertyi("sim/custom/7x/z_hyd_text_rh_ail", 0))
+defineProperty("z_hyd_text_rh_elev", createGlobalPropertyi("sim/custom/7x/z_hyd_text_rh_elev", 0))
+defineProperty("z_hyd_text_spoilers", createGlobalPropertyi("sim/custom/7x/z_hyd_text_spoilers", 0))
+
 -- 0 - park; 1 - taxi; 2 - cruise; 3 - to; 4 - land;
 defineProperty("z_flight_regime", createGlobalPropertyi("sim/custom/7x/z_flight_regime", 0))
+
+defineProperty("z_left_screen_brightness", createGlobalPropertyi("sim/custom/7x/z_left_screen_brightness", 50))
+defineProperty("z_right_screen_brightness", createGlobalPropertyi("sim/custom/7x/z_right_screen_brightness", 50))
+defineProperty("z_up_screen_brightness", createGlobalPropertyi("sim/custom/7x/z_up_screen_brightness", 50))
+defineProperty("z_down_screen_brightness", createGlobalPropertyi("sim/custom/7x/z_down_screen_brightness", 50))
+defineProperty("z_mini_screen_brightness", createGlobalPropertyi("sim/custom/7x/z_mini_screen_brightness", 50))
 -- Z
 
 createProp("sim/custom/7x/checklist", "int")
