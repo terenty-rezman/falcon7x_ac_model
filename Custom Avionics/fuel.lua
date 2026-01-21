@@ -213,15 +213,15 @@ function update()
     else
         set(emrglightb, 0)
     end
-    if get(FireSOV0) == 1 then set(sova1, 1) end
-    if get(FireSOV1) == 1 then
-        set(sovb2, 1);
-        set(sovc2, 1)
-    end
-    if get(FireSOV2) == 1 then
-        set(sovb3, 1);
-        set(sova3, 1)
-    end
+    -- if get(FireSOV0) == 1 then set(sova1, 1) end
+    -- if get(FireSOV1) == 1 then
+    --     set(sovb2, 1);
+    --     set(sovc2, 1)
+    -- end
+    -- if get(FireSOV2) == 1 then
+    --     set(sovb3, 1);
+    --     set(sova3, 1)
+    -- end
     local hyd = get(selecthyd) --  
     local N1gauche = get(indicN10) --
     local N1central = get(indicN11) --
