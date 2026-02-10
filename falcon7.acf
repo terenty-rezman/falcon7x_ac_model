@@ -197,7 +197,7 @@ P _gear/1/_lonE -20.0
 P _gear/1/_lonN -20.0
 P _gear/1/_lonR 0.0
 P _gear/1/_scon 31608.361328125
-P _gear/1/_stat_def 1.022444487
+P _gear/1/_stat_def 1.022444367
 P _gear/1/_steerdeg_hispeed 0.0
 P _gear/1/_steerdeg_lospeed 0.0
 P _gear/1/_strut_comp -0.500000000
@@ -231,7 +231,7 @@ P _gear/2/_lonE -20.0
 P _gear/2/_lonN -20.0
 P _gear/2/_lonR 0.0
 P _gear/2/_scon 31608.361328125
-P _gear/2/_stat_def 1.022444487
+P _gear/2/_stat_def 1.022444367
 P _gear/2/_steerdeg_hispeed 0.0
 P _gear/2/_steerdeg_lospeed 0.0
 P _gear/2/_strut_comp -0.500000000
@@ -51737,9 +51737,9 @@ P acf/_hyd_flightcons 1
 P acf/_hyd_gear 1
 P acf/_hyd_gear_fail_mode 2
 P acf/_hyd_gear_fail_speed 140.0
-P acf/_hyd_max_p 4900.0
+P acf/_hyd_max_p 4112.500000000
 P acf/_hyd_max_p_RAT 2900.0
-P acf/_hyd_max_p_ele 3920.0
+P acf/_hyd_max_p_ele 3290.0
 P acf/_hyd_max_p_eng 3300.0
 P acf/_hyd_max_p_rot 1.0
 P acf/_hyd_nw_steer 1
@@ -51871,7 +51871,7 @@ P acf/_num_inverters 0
 P acf/_num_prop 0
 P acf/_num_xmsn 3
 P acf/_nw_side_k 10.0
-P acf/_o2_bottle_liter 0
+P acf/_o2_bottle_liter 3100
 P acf/_oilT_is_C 1
 P acf/_ott_asi_kts_off_for_full_def 50.0
 P acf/_ott_asi_sec_into_future 15.0
@@ -56005,14 +56005,12 @@ GROUP Ecrangauche
   SHOW_GREATER 0.000000 [0]
   LOCKED
   HIDE
-  GROUP_OPEN
   GROUP Engine ecrangauche
     SHOW_LESS 0.500000 [18]
     SHOW_EQUAL 1.000000 [0]
     SHOW_GREATER 0.000000 [18]
     LOCKED
     HIDE
-    GROUP_OPEN
     gen_rotary autospeed
       POS 551.500000 21.500000
       IMAGE overhead/RIEN
@@ -63871,7 +63869,6 @@ GROUP Screenbasse
   SHOW_GREATER 0.000000 [0]
   LOCKED
   HIDE
-  GROUP_OPEN
   gen_rotary slider22
     POS 1167.500000 -109.000000
     IMAGE bouton/bouton
@@ -63901,7 +63898,6 @@ GROUP Screenbasse
     SHOW_EQUAL 0.000000 sim/7x/cmenud
     LOCKED
     HIDE
-    GROUP_OPEN
     gen_rotary choixecranbas
       POS 803.000000 -141.500000
       IMAGE Ecranbas/choixecranbas
@@ -73030,7 +73026,7 @@ GROUP console
 
 END_GROUP
 GROUP Horizon BU
-  SHOW_EQUAL 1.000000 sim/custom/7x/rhinit
+  SHOW_EQUAL 1.000000 sim/custom/7x/lhinit
   LOCKED
   HIDE
   horiz_gls_BC horizon_Glass_BC.pn

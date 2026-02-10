@@ -160,6 +160,7 @@ defineProperty("z_up_screen_brightness", createGlobalPropertyi("sim/custom/7x/z_
 defineProperty("z_down_screen_brightness", createGlobalPropertyi("sim/custom/7x/z_down_screen_brightness", 50))
 defineProperty("z_mini_screen_brightness", createGlobalPropertyi("sim/custom/7x/z_mini_screen_brightness", 50))
 
+-- fcs tab
 defineProperty("z_fcs_mfcc_1", createGlobalPropertyi("sim/custom/7x/z_fcs_mfcc_1", 0))
 defineProperty("z_fcs_mfcc_2", createGlobalPropertyi("sim/custom/7x/z_fcs_mfcc_2", 0))
 defineProperty("z_fcs_mfcc_3", createGlobalPropertyi("sim/custom/7x/z_fcs_mfcc_3", 0))
