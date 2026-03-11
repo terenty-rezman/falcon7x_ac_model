@@ -169,6 +169,12 @@ defineProperty("z_fcs_sfcc_1", createGlobalPropertyi("sim/custom/7x/z_fcs_sfcc_1
 defineProperty("z_fcs_sfcc_2", createGlobalPropertyi("sim/custom/7x/z_fcs_sfcc_2", 0))
 defineProperty("z_fcs_sfcc_3", createGlobalPropertyi("sim/custom/7x/z_fcs_sfcc_3", 0))
 defineProperty("z_fcs_sfcc", createGlobalPropertyi("sim/custom/7x/z_fcs_sfcc", 0))
+
+-- engine
+defineProperty("z_eng_status_1", createGlobalPropertyi("sim/custom/7x/z_eng_status_1", 0))
+defineProperty("z_eng_status_2", createGlobalPropertyi("sim/custom/7x/z_eng_status_2", 0))
+defineProperty("z_eng_status_3", createGlobalPropertyi("sim/custom/7x/z_eng_status_3", 0))
+
 -- Z
 
 createProp("sim/custom/7x/checklist", "int")
