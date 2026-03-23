@@ -175,6 +175,7 @@ defineProperty("z_eng_status_1", createGlobalPropertyi("sim/custom/7x/z_eng_stat
 defineProperty("z_eng_status_2", createGlobalPropertyi("sim/custom/7x/z_eng_status_2", 0))
 defineProperty("z_eng_status_3", createGlobalPropertyi("sim/custom/7x/z_eng_status_3", 0))
 
+defineProperty("z_adi_no_data", createGlobalPropertyi("sim/custom/7x/z_adi_no_data", 0))
 -- Z
 
 createProp("sim/custom/7x/checklist", "int")
