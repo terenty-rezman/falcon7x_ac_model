@@ -473,6 +473,8 @@ createProp("sim/custom/7x/dirpitch", "float")
 defineProperty("dirpitch", globalPropertyf("sim/custom/7x/dirpitch"));
 createProp("sim/custom/7x/dirth", "float")
 defineProperty("dirth", globalPropertyf("sim/custom/7x/dirth"));
+createProp("sim/custom/7x/dirth_no_aoa", "float")
+defineProperty("dirth_no_aoa", globalPropertyf("sim/custom/7x/dirth_no_aoa"));
 defineProperty("pitchdir", globalPropertyf(
                    "sim/cockpit2/autopilot/flight_director_pitch_deg"))
 defineProperty("pitchdirb",

@@ -179,10 +179,13 @@ function update()
     end
     if difspd > 17 then
         set(dirth, 17)
+        set(dirth_no_aoa, 17)
     elseif difspd < -17 then
         set(dirth, -17)
+        set(dirth_no_aoa, -17)
     else
         set(dirth, difspd - get(angleattack))
+        set(dirth_no_aoa, difspd)
     end
     set(accelereb, get(accelere) - get(angleattack))
     if get(groundspd) < 5 then
@@ -190,6 +193,7 @@ function update()
         set(FPS, 0)
         set(accelereb, 0)
         set(dirth, 0)
+        set(dirth_no_aoa, 0)
     end
     local Gforces = get(Gforce)
     if Gforces > get(maxGforce) then set(maxGforce, Gforces) end
