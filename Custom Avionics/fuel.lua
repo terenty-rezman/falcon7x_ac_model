@@ -467,10 +467,10 @@ function update()
             set(cropt, 47000)
         end
     end
-    if get(apu) == 1 then
-        set(fpump1, 1)
-        if N1central > 15 then set(fpump1, 2) end
-    end
+    -- if get(apu) == 1 then
+    --     set(fpump1, 1)
+    --     if N1central > 15 then set(fpump1, 2) end
+    -- end
     if get(SOV0) == 1 and N1gauche < 5 and get(starteng) == 1 then
         set(flageng0, 1) -- un flag
     end
