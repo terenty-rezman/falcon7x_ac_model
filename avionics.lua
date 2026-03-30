@@ -730,6 +730,7 @@ set(z_syn_eng_ign3, 0)
 set(z_syn_eng_ab1, 0)
 set(z_syn_eng_ab2, 0)
 set(z_syn_eng_ab3, 0)
+set(n1_max_eng2, 91.6)
 
 set(z_line_gen2_on, 0)
 set(z_line_bat2_ratgen_on, 0)
