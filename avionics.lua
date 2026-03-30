@@ -181,7 +181,7 @@ defineProperty("z_adi_no_data", createGlobalPropertyi("sim/custom/7x/z_adi_no_da
 defineProperty("z_fdtd_pilot", createGlobalPropertyi("sim/custom/7x/z_fdtd_pilot", 0))
 defineProperty("z_fdtd_copilot", createGlobalPropertyi("sim/custom/7x/z_fdtd_copilot", 0))
 
-defineProperty("n1_max_eng2", globalPropertyf("sim/custom/7x/z_n1_max_eng2"), 91.6);
+n1_max_eng2 = createGlobalPropertyf("sim/custom/7x/z_n1_max_eng2", 91.6)
 -- Z
 
 createProp("sim/custom/7x/checklist", "int")
