@@ -207,7 +207,11 @@ defineProperty("z_bld_pipe_eng_3", createGlobalPropertyi("sim/custom/7x/z_bld_pi
 defineProperty("z_bld_wings", createGlobalPropertyi("sim/custom/7x/z_bld_wings", 0))
 defineProperty("z_bld_brake", createGlobalPropertyi("sim/custom/7x/z_bld_brake", 0))
 defineProperty("z_bld_xbleed12", createGlobalPropertyi("sim/custom/7x/z_bld_xbleed12", 0))
-defineProperty("z_bld_xbleed23", createGlobalPropertyi("sim/custom/7x/z_bld_xbleed23", 0))
+defineProperty("z_bld_xbleed23", createGlobalPropertyi("sim/custom/7x/z_bld_xbleed13", 0))
+defineProperty("z_bld_xbleed12_on_off", createGlobalPropertyi("sim/custom/7x/z_bld_xbleed12_on_off", 0))
+defineProperty("z_bld_xbleed23_on_off", createGlobalPropertyi("sim/custom/7x/z_bld_xbleed13_on_off", 0))
+defineProperty("z_bld_wings_valve", createGlobalPropertyi("sim/custom/7x/z_bld_wings_valve", 0))
+defineProperty("z_bld_brake_valve", createGlobalPropertyi("sim/custom/7x/z_bld_brake_valve", 0))
 
 -- fly dir
 defineProperty("z_fdtd_pilot", createGlobalPropertyi("sim/custom/7x/z_fdtd_pilot", 0))
