@@ -77,7 +77,19 @@ defineProperty("z_thrust_purple_max_deg_3", createGlobalPropertyi("sim/custom/7x
 -- ads
 defineProperty("z_ads_pilot", createGlobalPropertyi("sim/custom/7x/z_ads_pilot", 1))
 defineProperty("z_ads_copilot", createGlobalPropertyi("sim/custom/7x/z_ads_copilot", 2))
-defineProperty("z_ads_fail_id", createGlobalPropertyi("sim/custom/7x/z_ads_fail", 0))
+defineProperty("z_ads_fail_1", createGlobalPropertyi("sim/custom/7x/z_ads_fail_1", 0))
+defineProperty("z_ads_fail_2", createGlobalPropertyi("sim/custom/7x/z_ads_fail_2", 0))
+defineProperty("z_ads_fail_3", createGlobalPropertyi("sim/custom/7x/z_ads_fail_3", 0))
+defineProperty("z_ads_fail_4", createGlobalPropertyi("sim/custom/7x/z_ads_fail_4", 0))
+
+defineProperty("z_fd_flag_pilot", createGlobalPropertyi("sim/custom/7x/z_fd_flag_pilot", 0))
+defineProperty("z_fd_flag_copilot", createGlobalPropertyi("sim/custom/7x/z_fd_flag_copilot", 0))
+
+defineProperty("z_td_flag_pilot", createGlobalPropertyi("sim/custom/7x/z_td_flag_pilot", 0))
+defineProperty("z_td_flag_copilot", createGlobalPropertyi("sim/custom/7x/z_td_flag_copilot", 0))
+
+defineProperty("z_ias_flag_pilot", createGlobalPropertyi("sim/custom/7x/z_ias_flag_pilot", 0))
+defineProperty("z_ias_flag_copilot", createGlobalPropertyi("sim/custom/7x/z_ias_flag_copilot", 0))
 -- irs
 defineProperty("z_irs_pilot", createGlobalPropertyi("sim/custom/7x/z_irs_pilot", 1))
 defineProperty("z_irs_copilot", createGlobalPropertyi("sim/custom/7x/z_irs_copilot", 2))
