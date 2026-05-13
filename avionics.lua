@@ -239,15 +239,15 @@ defineProperty("z_bld_pipe_brake", createGlobalPropertyi("sim/custom/7x/z_bld_pi
 defineProperty("z_bld_eng_lp_2_up", createGlobalPropertyi("sim/custom/7x/z_bld_eng_lp_2_up", 0))
 
 -- rainbow
-defineProperty("z_rainbow1_angle_left_pilot", createGlobalPropertyi("sim/custom/7x/z_rainbow1_angle_left_pilot", 0))
-defineProperty("z_rainbow1_angle_right_pilot", createGlobalPropertyi("sim/custom/7x/z_rainbow1_angle_right_pilot", 0))
-defineProperty("z_rainbow2_angle_left_pilot", createGlobalPropertyi("sim/custom/7x/z_rainbow2_angle_left_pilot", 0))
-defineProperty("z_rainbow2_angle_right_pilot", createGlobalPropertyi("sim/custom/7x/z_rainbow2_angle_right_pilot", 0))
+defineProperty("z_rainbow1_angle_left_pilot", createGlobalPropertyi("sim/custom/7x/z_rainbow1_angle_left_pilot", 60))
+defineProperty("z_rainbow1_angle_right_pilot", createGlobalPropertyi("sim/custom/7x/z_rainbow1_angle_right_pilot", 60))
+defineProperty("z_rainbow2_angle_left_pilot", createGlobalPropertyi("sim/custom/7x/z_rainbow2_angle_left_pilot", 60))
+defineProperty("z_rainbow2_angle_right_pilot", createGlobalPropertyi("sim/custom/7x/z_rainbow2_angle_right_pilot", 60))
 
-defineProperty("z_rainbow1_angle_left_copilot", createGlobalPropertyi("sim/custom/7x/z_rainbow1_angle_left_copilot", 0))
-defineProperty("z_rainbow1_angle_right_copilot", createGlobalPropertyi("sim/custom/7x/z_rainbow1_angle_right_copilot", 0))
-defineProperty("z_rainbow2_angle_left_copilot", createGlobalPropertyi("sim/custom/7x/z_rainbow2_angle_left_copilot", 0))
-defineProperty("z_rainbow2_angle_right_copilot", createGlobalPropertyi("sim/custom/7x/z_rainbow2_angle_right_copilot", 0))
+defineProperty("z_rainbow1_angle_left_copilot", createGlobalPropertyi("sim/custom/7x/z_rainbow1_angle_left_copilot", 60))
+defineProperty("z_rainbow1_angle_right_copilot", createGlobalPropertyi("sim/custom/7x/z_rainbow1_angle_right_copilot", 60))
+defineProperty("z_rainbow2_angle_left_copilot", createGlobalPropertyi("sim/custom/7x/z_rainbow2_angle_left_copilot", 60))
+defineProperty("z_rainbow2_angle_right_copilot", createGlobalPropertyi("sim/custom/7x/z_rainbow2_angle_right_copilot", 60))
 
 -- fly dir
 defineProperty("z_fdtd_pilot", createGlobalPropertyi("sim/custom/7x/z_fdtd_pilot", 0))
@@ -821,6 +821,15 @@ set(z_mini_black_screen, 0)
 set(z_fuel_digital_1, 1)
 set(z_fuel_digital_2, 1)
 set(z_fuel_digital_3, 1)
+
+set(z_rainbow1_angle_left_pilot, 60)
+set(z_rainbow1_angle_right_pilot, 60)
+set(z_rainbow2_angle_left_pilot, 60)
+set(z_rainbow2_angle_right_pilot, 60)
+set(z_rainbow1_angle_left_copilot, 60)
+set(z_rainbow1_angle_right_copilot, 60)
+set(z_rainbow2_angle_left_copilot, 60)
+set(z_rainbow2_angle_right_copilot, 60)
 
 if get(debuter) == 0 then
     set(gen0, 1)
