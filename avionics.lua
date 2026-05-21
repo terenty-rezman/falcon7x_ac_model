@@ -249,9 +249,16 @@ defineProperty("z_rainbow1_angle_right_copilot", createGlobalPropertyi("sim/cust
 defineProperty("z_rainbow2_angle_left_copilot", createGlobalPropertyi("sim/custom/7x/z_rainbow2_angle_left_copilot", 60))
 defineProperty("z_rainbow2_angle_right_copilot", createGlobalPropertyi("sim/custom/7x/z_rainbow2_angle_right_copilot", 60))
 
+-- rose or arc
+defineProperty("z_rose_arc_copilot", createGlobalPropertyi("sim/custom/7x/z_rose_arc_copilot", 0))
+defineProperty("z_rose_arc_pilot", createGlobalPropertyi("sim/custom/7x/z_rose_arc_pilot", 0))
+
 -- fly dir
 defineProperty("z_fdtd_pilot", createGlobalPropertyi("sim/custom/7x/z_fdtd_pilot", 0))
 defineProperty("z_fdtd_copilot", createGlobalPropertyi("sim/custom/7x/z_fdtd_copilot", 0))
+
+-- ils 
+defineProperty("z_ils_status", createGlobalPropertyi("sim/custom/7x/z_ils_status", 0))
 
 n1_max_eng2 = createGlobalPropertyf("sim/custom/7x/z_n1_max_eng2", 91.6)
 z_hyd_ratio_1 = createGlobalPropertyf("sim/custom/7x/z_hyd_ratio_1", .6)
