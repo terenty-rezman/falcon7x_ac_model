@@ -260,6 +260,13 @@ defineProperty("z_fdtd_copilot", createGlobalPropertyi("sim/custom/7x/z_fdtd_cop
 -- ils 
 defineProperty("z_ils_status", createGlobalPropertyi("sim/custom/7x/z_ils_status", 0))
 
+-- adi warning boxes
+defineProperty("z_adi_gnd_prox_box", createGlobalPropertyi("sim/custom/7x/z_adi_gnd_prox_box", 0))
+defineProperty("z_adi_pull_up_box", createGlobalPropertyi("sim/custom/7x/z_adi_pull_up_box", 0))
+defineProperty("z_adi_windshear_box", createGlobalPropertyi("sim/custom/7x/z_adi_windshear_box", 0))
+defineProperty("z_adi_sv_box", createGlobalPropertyi("sim/custom/7x/z_adi_sv_box", 0))
+defineProperty("z_adi_terr_test_box", createGlobalPropertyi("sim/custom/7x/z_adi_terr_test_box", 0))
+
 n1_max_eng2 = createGlobalPropertyf("sim/custom/7x/z_n1_max_eng2", 91.6)
 z_hyd_ratio_1 = createGlobalPropertyf("sim/custom/7x/z_hyd_ratio_1", .6)
 -- Z
