@@ -120,7 +120,7 @@ function update()
     elseif (get(altlimit) > 100 and get(indicN10) < 10 and get(indicN11) < 10 and
         get(indicN12) < 10) or
         (get(gen0) == 0 and get(gen1) == 0 and get(gen2) == 0) then
-        -- set(rat, 1)
+        set(rat, 0)
     end
 
     if get(lhmaster) == 1 then
