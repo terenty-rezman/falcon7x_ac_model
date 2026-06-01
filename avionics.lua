@@ -269,6 +269,8 @@ defineProperty("z_adi_terr_test_box", createGlobalPropertyi("sim/custom/7x/z_adi
 
 n1_max_eng2 = createGlobalPropertyf("sim/custom/7x/z_n1_max_eng2", 91.6)
 z_hyd_ratio_1 = createGlobalPropertyf("sim/custom/7x/z_hyd_ratio_1", .6)
+z_hyd_ratio_2 = createGlobalPropertyf("sim/custom/7x/z_hyd_ratio_2", .6)
+z_hyd_ratio_3 = createGlobalPropertyf("sim/custom/7x/z_hyd_ratio_3", .6)
 -- Z
 
 createProp("sim/custom/7x/checklist", "int")
