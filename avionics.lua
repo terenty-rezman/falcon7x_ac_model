@@ -271,6 +271,28 @@ n1_max_eng2 = createGlobalPropertyf("sim/custom/7x/z_n1_max_eng2", 91.6)
 z_hyd_ratio_1 = createGlobalPropertyf("sim/custom/7x/z_hyd_ratio_1", .6)
 z_hyd_ratio_2 = createGlobalPropertyf("sim/custom/7x/z_hyd_ratio_2", .6)
 z_hyd_ratio_3 = createGlobalPropertyf("sim/custom/7x/z_hyd_ratio_3", .6)
+
+-- flaps
+defineProperty("z_flaps_state", createGlobalPropertyi("sim/custom/7x/z_flaps_state", 0))
+defineProperty("z_drop_state", createGlobalPropertyi("sim/custom/7x/z_drop_state", 0))
+
+-- aileron
+defineProperty("z_aileron_state_left", createGlobalPropertyi("sim/custom/7x/z_aileron_state_left", 0))
+defineProperty("z_aileron_state_right", createGlobalPropertyi("sim/custom/7x/z_aileron_state_right", 0))
+
+-- tcas
+z_tcas_adi_green_lower_bound = createGlobalPropertyf("sim/cockpit/weapons/z_tcas_adi_green_lower_bound", 0)
+z_tcas_adi_upper_antler_pitch = createGlobalPropertyf("sim/cockpit/weapons/z_tcas_adi_upper_antler_pitch", 0)
+z_tcas_adi_lower_antler_pitch = createGlobalPropertyf("sim/cockpit/weapons/z_tcas_adi_lower_antler_pitch", 0)
+defineProperty("z_tcas_adi_visible", createGlobalPropertyi("sim/custom/7x/z_tcas_adi_visible", 0))
+
+-- spoils
+defineProperty("z_flaps_state", createGlobalPropertyi("sim/custom/7x/z_flaps_state", 0))
+
+-- gear fail
+defineProperty("z_gear_fail", createGlobalPropertyi("sim/custom/7x/z_gear_fail", 0))
+
+defineProperty("z_rat_state", createGlobalPropertyi("sim/custom/7x/z_rat_state", 0))
 -- Z
 
 createProp("sim/custom/7x/checklist", "int")
