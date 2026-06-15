@@ -99,6 +99,8 @@ defineProperty("z_fms_copilot", createGlobalPropertyi("sim/custom/7x/z_fms_copil
 -- ra
 defineProperty("z_ra_pilot", createGlobalPropertyi("sim/custom/7x/z_ra_pilot", 1))
 defineProperty("z_ra_copilot", createGlobalPropertyi("sim/custom/7x/z_ra_copilot", 2))
+
+defineProperty("z_ra_fail", createGlobalPropertyi("sim/custom/7x/z_ra_fail", 0))
 -- vor
 defineProperty("z_vor_pilot", createGlobalPropertyi("sim/custom/7x/z_vor_pilot", 1))
 defineProperty("z_vor_copilot", createGlobalPropertyi("sim/custom/7x/z_vor_copilot", 2))
@@ -254,8 +256,8 @@ defineProperty("z_rose_arc_copilot", createGlobalPropertyi("sim/custom/7x/z_rose
 defineProperty("z_rose_arc_pilot", createGlobalPropertyi("sim/custom/7x/z_rose_arc_pilot", 0))
 
 -- fly dir
-defineProperty("z_fdtd_pilot", createGlobalPropertyi("sim/custom/7x/z_fdtd_pilot", 0))
-defineProperty("z_fdtd_copilot", createGlobalPropertyi("sim/custom/7x/z_fdtd_copilot", 0))
+defineProperty("z_fdtd_pilot", createGlobalPropertyi("sim/custom/7x/z_fdtd_pilot", 1))
+defineProperty("z_fdtd_copilot", createGlobalPropertyi("sim/custom/7x/z_fdtd_copilot", 1))
 
 -- ils 
 defineProperty("z_ils_status", createGlobalPropertyi("sim/custom/7x/z_ils_status", 0))
@@ -293,6 +295,8 @@ defineProperty("z_flaps_state", createGlobalPropertyi("sim/custom/7x/z_flaps_sta
 defineProperty("z_gear_fail", createGlobalPropertyi("sim/custom/7x/z_gear_fail", 0))
 
 defineProperty("z_rat_state", createGlobalPropertyi("sim/custom/7x/z_rat_state", 0))
+
+defineProperty("z_adi_alt_ground_visible", createGlobalPropertyi("sim/custom/7x/z_adi_alt_ground_visible", 1))
 -- Z
 
 createProp("sim/custom/7x/checklist", "int")
