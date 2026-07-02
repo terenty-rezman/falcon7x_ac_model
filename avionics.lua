@@ -298,7 +298,7 @@ defineProperty("z_rat_state", createGlobalPropertyi("sim/custom/7x/z_rat_state",
 
 defineProperty("z_adi_alt_ground_visible", createGlobalPropertyi("sim/custom/7x/z_adi_alt_ground_visible", 1))
 
-defineProperty("z_slats_fail", createGlobalPropertyi("sim/custom/7x/z_slats_fail", 1))
+defineProperty("z_slats_fail", createGlobalPropertyi("sim/custom/7x/z_slats_fail", 0))
 -- Z
 
 createProp("sim/custom/7x/checklist", "int")
