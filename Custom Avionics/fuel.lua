@@ -30,6 +30,16 @@ defineProperty("cruisealtopt", globalPropertyf("sim/7x/cruisealtopt"))
 createProp("sim/7x/cropt", "float")
 defineProperty("cropt", globalPropertyf("sim/7x/cropt"))
 
+-- Z
+defineProperty("z_ff_eng1", globalPropertyf("sim/cockpit2/engine/indicators/fuel_flow_kg_sec[0]"));
+defineProperty("z_ff_eng2", globalPropertyf("sim/cockpit2/engine/indicators/fuel_flow_kg_sec[1]"));
+defineProperty("z_ff_eng3", globalPropertyf("sim/cockpit2/engine/indicators/fuel_flow_kg_sec[2]"));
+
+z_fuel_used_eng1 = createGlobalPropertyf("sim/custom/7x/z_fuel_used_eng1", 0)
+z_fuel_used_eng2 = createGlobalPropertyf("sim/custom/7x/z_fuel_used_eng2", 0)
+z_fuel_used_eng3 = createGlobalPropertyf("sim/custom/7x/z_fuel_used_eng3", 0)
+-- Z
+
 local th1 = math.random(1, 8)
 local th2 = math.random(1, 12)
 local th3 = math.random(1, 5)
@@ -190,6 +200,9 @@ function selcruisespeed()
 end
 
 function update()
+    set(z_fuel_used_eng1, get(z_fuel_used_eng1) + get(z_ff_eng1) / 62 / 0.45359237)
+    set(z_fuel_used_eng2, get(z_fuel_used_eng2) + get(z_ff_eng2) / 62 / 0.45359237)
+    set(z_fuel_used_eng3, get(z_fuel_used_eng3) + get(z_ff_eng3) / 62 / 0.45359237)
 
     -- ######si j'actionne un bouton de transfertFuel transfert 
     if get(bt1f3) == 1 or get(bt1f2) == 1 or get(bt2f1) == 1 or get(bt2f3) == 1 or
@@ -339,6 +352,10 @@ function update()
     if get(fuel_reset) == 1 then
         fuelstart = get(fuel_total)
         set(fuel_reset, 0)
+
+        set(z_fuel_used_eng1, 0)
+        set(z_fuel_used_eng2, 0)
+        set(z_fuel_used_eng3, 0)
     else
         fuelactuel = get(fuel_total)
         fuelutilise = fuelstart - fuelactuel

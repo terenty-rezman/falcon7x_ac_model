@@ -111,6 +111,8 @@ local flagmin = 0
 local ktsoumach = 0
 local difspd = 0
 
+set(paaltholdb, 1)
+
 function update()
 
     if get(paaltholdb) > 1 then set(pathcommand, 0) end
