@@ -380,20 +380,20 @@ function update()
     end
     if get(rolldeg) > 35 and get(joyroll) == 0 then set(rollratio, -.1) end
     if get(rolldeg) > 50 and get(joyroll) > 0 then
-        set(rollratio, 0)
+        -- set(rollratio, 0)
         if get(rolldeg) > 54 then
             local var =
                 (-.0571 * (get(rolldeg) ^ 2)) + (6.2743 * get(rolldeg)) - 172.36
-            set(rollratio, var)
+            -- set(rollratio, var)
         end
     end
     if get(rolldeg) < -35 and get(joyroll) == 0 then set(rollratio, .1) end
     if get(rolldeg) < -50 and get(joyroll) < 0 then
-        set(rollratio, 0)
+        -- set(rollratio, 0)
         if get(rolldeg) < -54 then
             local var = (.0571 * (get(rolldeg) ^ 2)) + (6.2743 * get(rolldeg)) +
                             172.36
-            set(rollratio, var)
+            -- set(rollratio, var)
         end
     end
     if get(pitchdeg) > 20 and get(joypitch) == 0 then set(pitchratio, -.1) end
