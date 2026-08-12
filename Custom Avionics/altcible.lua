@@ -399,21 +399,21 @@ function update()
     if get(pitchdeg) > 20 and get(joypitch) == 0 then set(pitchratio, -.1) end
     if get(pitchdeg) > 25 and get(joypitch) >= 0 then
         local pr = get(pitchratio)
-        set(pitchratio, pr / 2)
+        -- set(pitchratio, pr / 2)
         if get(pitchdeg) > 30 then
             local var = (-.0571 * (get(pitchdeg) ^ 2)) +
                             (3.4171 * get(pitchdeg)) - 51.13
-            set(pitchratio, var)
+            -- set(pitchratio, var)
         end
     end
     if get(pitchdeg) < -20 and get(joypitch) == 0 then set(pitchratio, .1) end
     if get(pitchdeg) < -25 and get(joypitch) <= 0 then
         local pr = get(pitchratio)
-        set(pitchratio, pr / 2)
+        -- set(pitchratio, pr / 2)
         if get(pitchdeg) < -30 then
             local var =
                 (.0571 * (get(pitchdeg) ^ 2)) + (3.4171 * get(pitchdeg)) + 51.13
-            set(pitchratio, var)
+            -- set(pitchratio, var)
         end
     end
     local lldstatu = get(lld)
