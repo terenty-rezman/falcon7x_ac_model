@@ -300,6 +300,12 @@ defineProperty("z_adi_alt_ground_visible", createGlobalPropertyi("sim/custom/7x/
 
 defineProperty("z_slats_fail", createGlobalPropertyi("sim/custom/7x/z_slats_fail", 0))
 
+-- tcas
+defineProperty("z_tcas_radar_test_visible", createGlobalPropertyi("sim/custom/7x/z_tcas_radar_test_visible", 0))
+defineProperty("z_ac1_visible", createGlobalPropertyi("sim/custom/7x/z_ac1_visible", 0))
+defineProperty("z_ac1_elevation", createGlobalPropertyi("sim/custom/7x/z_ac1_elevation", 10))
+defineProperty("z_ac1_intruder_type", createGlobalPropertyi("sim/custom/7x/z_ac1_intruder_type", 0))
+defineProperty("z_ac1_vy", createGlobalPropertyi("sim/custom/7x/z_ac1_vy", 0))
 -- Z
 
 createProp("sim/custom/7x/checklist", "int")
