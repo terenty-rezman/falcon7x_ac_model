@@ -111,6 +111,8 @@ local flagmin = 0
 local ktsoumach = 0
 local difspd = 0
 
+last_battery_state = 0
+
 set(paaltholdb, 1)
 
 function update()
@@ -143,7 +145,7 @@ function update()
     --     set(heatwind, 1)
     -- end
 
-    if get(bat) == 0 then
+    if get(bat) == 0 and get(gen_off_0) == 1 and get(gen_off_1) == 1 and get(gen_off_2) == 1 then
         set(flydir, 0)
         set(lhisol, 0)
         set(rhisol, 0)
@@ -152,6 +154,9 @@ function update()
         set(lhinit, 0)
         set(rhinit, 0)
     end
+
+    last_battery_state = get(bat)
+
     directionR = get(direction) * math.pi / 180
     hdgtrkR = get(hdgtrk) * math.pi / 180
     hdgpaR = get(hdgpa) * math.pi / 180

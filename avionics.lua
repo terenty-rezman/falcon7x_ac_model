@@ -306,6 +306,11 @@ defineProperty("z_ac1_visible", createGlobalPropertyi("sim/custom/7x/z_ac1_visib
 defineProperty("z_ac1_elevation", createGlobalPropertyi("sim/custom/7x/z_ac1_elevation", 10))
 defineProperty("z_ac1_intruder_type", createGlobalPropertyi("sim/custom/7x/z_ac1_intruder_type", 0))
 defineProperty("z_ac1_vy", createGlobalPropertyi("sim/custom/7x/z_ac1_vy", 0))
+
+-- gen stopped
+defineProperty("gen_off_0", globalPropertyi("sim/cockpit2/annunciators/generator_off[0]"));
+defineProperty("gen_off_1", globalPropertyi("sim/cockpit2/annunciators/generator_off[1]"));
+defineProperty("gen_off_2", globalPropertyi("sim/cockpit2/annunciators/generator_off[2]"));
 -- Z
 
 createProp("sim/custom/7x/checklist", "int")
@@ -510,12 +515,9 @@ defineProperty("inverter",
 defineProperty("avionic",
                globalPropertyi("sim/cockpit2/switches/avionics_power_on"));
 defineProperty("crosstie", globalPropertyi("sim/cockpit2/electrical/cross_tie"));
-defineProperty("gen0",
-               globalPropertyi("sim/cockpit2/electrical/generator_on[0]"));
-defineProperty("gen1",
-               globalPropertyi("sim/cockpit2/electrical/generator_on[1]"));
-defineProperty("gen2",
-               globalPropertyi("sim/cockpit2/electrical/generator_on[2]"));
+defineProperty("gen0", globalPropertyi("sim/cockpit2/electrical/generator_on[0]"));
+defineProperty("gen1", globalPropertyi("sim/cockpit2/electrical/generator_on[1]"));
+defineProperty("gen2", globalPropertyi("sim/cockpit2/electrical/generator_on[2]"));
 createProp("sim/custom/7x/lhmaster", "int")
 defineProperty("lhmaster", globalPropertyi("sim/custom/7x/lhmaster"))
 createProp("sim/custom/7x/lhinit", "int")
