@@ -111,8 +111,6 @@ local flagmin = 0
 local ktsoumach = 0
 local difspd = 0
 
-last_battery_state = 0
-
 set(paaltholdb, 1)
 
 function update()
@@ -154,8 +152,6 @@ function update()
         set(lhinit, 0)
         set(rhinit, 0)
     end
-
-    last_battery_state = get(bat)
 
     directionR = get(direction) * math.pi / 180
     hdgtrkR = get(hdgtrk) * math.pi / 180
