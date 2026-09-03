@@ -184,6 +184,9 @@ defineProperty("z_fcs_sfcc_2", createGlobalPropertyi("sim/custom/7x/z_fcs_sfcc_2
 defineProperty("z_fcs_sfcc_3", createGlobalPropertyi("sim/custom/7x/z_fcs_sfcc_3", 0))
 defineProperty("z_fcs_sfcc", createGlobalPropertyi("sim/custom/7x/z_fcs_sfcc", 0))
 
+-- fcs test
+defineProperty("z_fcs_mfcc_1", createGlobalPropertyi("sim/custom/7x/z_fcs_mfcc_1", 0))
+
 -- engine
 defineProperty("z_eng_status_1", createGlobalPropertyi("sim/custom/7x/z_eng_status_1", 0))
 defineProperty("z_eng_status_2", createGlobalPropertyi("sim/custom/7x/z_eng_status_2", 0))
@@ -278,9 +281,21 @@ z_hyd_ratio_3 = createGlobalPropertyf("sim/custom/7x/z_hyd_ratio_3", .6)
 defineProperty("z_flaps_state", createGlobalPropertyi("sim/custom/7x/z_flaps_state", 0))
 defineProperty("z_drop_state", createGlobalPropertyi("sim/custom/7x/z_drop_state", 0))
 
--- aileron
-defineProperty("z_aileron_state_left", createGlobalPropertyi("sim/custom/7x/z_aileron_state_left", 0))
-defineProperty("z_aileron_state_right", createGlobalPropertyi("sim/custom/7x/z_aileron_state_right", 0))
+defineProperty("z_fcs_ail_text_lh",  createGlobalPropertyi("sim/custom/7x/z_fcs_ail_text_lh", 0))
+defineProperty("z_fcs_ail_text_rh", createGlobalPropertyi("sim/custom/7x/z_fcs_ail_text_rh", 0))
+defineProperty("z_fcs_elev_text_lh", createGlobalPropertyi("sim/custom/7x/z_fcs_elev_text_lh", 0))
+defineProperty("z_fcs_elev_text_rh", createGlobalPropertyi("sim/custom/7x/z_fcs_elev_text_rh", 0))
+defineProperty("z_fcs_spoil_text_lh", createGlobalPropertyi("sim/custom/7x/z_fcs_spoil_text_lh", 0))
+defineProperty("z_fcs_spoil_text_rh", createGlobalPropertyi("sim/custom/7x/z_fcs_spoil_text_rh", 0))
+defineProperty("z_fcs_rudder_text", createGlobalPropertyi("sim/custom/7x/z_fcs_rudder_text", 0))
+defineProperty("z_fcs_ths_text", createGlobalPropertyi("sim/custom/7x/z_fcs_ths_text", 0))
+defineProperty("z_fcs_ail_state_lh", createGlobalPropertyi("sim/custom/7x/z_fcs_ail_state_lh", 0))
+defineProperty("z_fcs_ail_state_rh", createGlobalPropertyi("sim/custom/7x/z_fcs_ail_state_rh", 0))
+defineProperty("z_fcs_elev_state_lh", createGlobalPropertyi("sim/custom/7x/z_fcs_elev_state_lh", 0))
+defineProperty("z_fcs_elev_state_rh", createGlobalPropertyi("sim/custom/7x/z_fcs_elev_state_rh", 0))
+defineProperty("z_fcs_spoil_state_lh", createGlobalPropertyi("sim/custom/7x/z_fcs_spoil_state_lh", 0))
+defineProperty("z_fcs_spoil_state_rh", createGlobalPropertyi("sim/custom/7x/z_fcs_spoil_state_rh", 0))
+defineProperty("z_fcs_rudder_state",  createGlobalPropertyi("sim/custom/7x/z_fcs_rudder_state", 0))
 
 -- tcas
 z_tcas_adi_green_lower_bound = createGlobalPropertyf("sim/cockpit/weapons/z_tcas_adi_green_lower_bound", 0)
@@ -308,9 +323,15 @@ defineProperty("z_ac1_intruder_type", createGlobalPropertyi("sim/custom/7x/z_ac1
 defineProperty("z_ac1_vy", createGlobalPropertyi("sim/custom/7x/z_ac1_vy", 0))
 
 -- gen stopped
-defineProperty("gen_off_0", globalPropertyi("sim/cockpit2/annunciators/generator_off[0]"));
-defineProperty("gen_off_1", globalPropertyi("sim/cockpit2/annunciators/generator_off[1]"));
-defineProperty("gen_off_2", globalPropertyi("sim/cockpit2/annunciators/generator_off[2]"));
+defineProperty("gen_off_0", globalPropertyi("sim/cockpit2/annunciators/generator_off[0]"))
+defineProperty("gen_off_1", globalPropertyi("sim/cockpit2/annunciators/generator_off[1]"))
+defineProperty("gen_off_2", globalPropertyi("sim/cockpit2/annunciators/generator_off[2]"))
+
+-- cas source
+defineProperty("z_cas_source_pilot", createGlobalPropertyi("sim/custom/7x/z_cas_source_pilot", 1))
+defineProperty("z_cas_source_copilot", createGlobalPropertyi("sim/custom/7x/z_cas_source_copilot", 2))
+defineProperty("z_cas_source_failed", createGlobalPropertyi("sim/custom/7x/z_cas_source_failed", 0))
+
 -- Z
 
 createProp("sim/custom/7x/checklist", "int")
