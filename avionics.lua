@@ -332,6 +332,16 @@ defineProperty("z_cas_source_pilot", createGlobalPropertyi("sim/custom/7x/z_cas_
 defineProperty("z_cas_source_copilot", createGlobalPropertyi("sim/custom/7x/z_cas_source_copilot", 2))
 defineProperty("z_cas_source_failed", createGlobalPropertyi("sim/custom/7x/z_cas_source_failed", 0))
 
+-- ecs pipes
+defineProperty("z_ecs_pipe_pax_vertical", createGlobalPropertyi("sim/custom/7x/z_ecs_pipe_pax_vertical", 0))
+defineProperty("z_ecs_pipe_crew_vertical", createGlobalPropertyi("sim/custom/7x/z_ecs_pipe_crew_vertical", 0))
+defineProperty("z_ecs_pipe_pack_pax", createGlobalPropertyi("sim/custom/7x/z_ecs_pipe_pack_pax", 0))
+defineProperty("z_ecs_pipe_pack_crew", createGlobalPropertyi("sim/custom/7x/z_ecs_pipe_pack_crew", 0))
+defineProperty("z_ecs_pipe_pack", createGlobalPropertyi("sim/custom/7x/z_ecs_pipe_pack", 0))
+defineProperty("z_ecs_pipe_pax_little", createGlobalPropertyi("sim/custom/7x/z_ecs_pipe_pax_little", 0))
+defineProperty("z_ecs_pipe_crew_little", createGlobalPropertyi("sim/custom/7x/z_ecs_pipe_crew_little", 0))
+defineProperty("z_ecs_pipe_xbleed", createGlobalPropertyi("sim/custom/7x/z_ecs_pipe_xbleed", 0))
+defineProperty("z_ecs_pipe_crew_start", createGlobalPropertyi("sim/custom/7x/z_ecs_pipe_crew_start", 0))
 -- Z
 
 createProp("sim/custom/7x/checklist", "int")
