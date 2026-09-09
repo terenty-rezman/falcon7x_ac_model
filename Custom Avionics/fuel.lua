@@ -40,9 +40,12 @@ z_fuel_used_eng2 = createGlobalPropertyf("sim/custom/7x/z_fuel_used_eng2", 0)
 z_fuel_used_eng3 = createGlobalPropertyf("sim/custom/7x/z_fuel_used_eng3", 0)
 -- Z
 
-local th1 = math.random(1, 8)
-local th2 = math.random(1, 12)
-local th3 = math.random(1, 5)
+-- local th1 = math.random(1, 8)
+-- local th2 = math.random(1, 12)
+-- local th3 = math.random(1, 5)
+local th1 = 4
+local th2 = 4
+local th3 = 4
 local fuelactuel = 0
 local fuelstart = 0
 local fuelutilise = 0
@@ -240,14 +243,14 @@ function update()
     local N1central = get(indicN11) --
     local N1droit = get(indicN12) --
     local isah = get(isa)
-    local valpydM1 = ((710.64 * math.log(N1gauche)) + 24.559)
+    local valpydM1 = ((1010 * math.log(N1gauche)) + 24.559)
     if valpydM1 < 1 then valpydM1 = 1 end
-    local valpydM2 = ((710.64 * math.log(N1central)) + 24.559)
+    local valpydM2 = ((1010 * math.log(N1central)) + 24.559)
     if valpydM2 < 1 then valpydM2 = 1 end
 
     local phydM1 = valpydM1 -- 
     local phydM2 = get(hyd1)
-    local phydM3 = get(hyd2) --
+    local phydM3 = get(hyd2)
     local phydBU = get(buhydro)
     local flagM = 0
     local flagB = 0
@@ -302,11 +305,11 @@ function update()
         flagB = 0
     end
     if phydM2 > phydM3 then
-        set(hyd22, phydM2)
+        set(hyd22, phydM2 * 1.2 )
         set(hydratio2, 0)
         set(hydratio3, 0)
     else
-        set(hyd22, phydM3)
+        set(hyd22, phydM3 * 1.2 )
         set(hydratio2, 0)
         set(hydratio3, 0)
     end

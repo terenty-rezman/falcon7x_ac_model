@@ -143,7 +143,7 @@ function update()
     --     set(heatwind, 1)
     -- end
 
-    if get(bat) == 0 and get(gen_off_0) == 1 and get(gen_off_1) == 1 and get(gen_off_2) == 1 then
+    if get(bat) == 0 and get(gen_off_1) == 1 and get(gen_off_2) == 1 and get(gen_off_3) == 1 then
         set(flydir, 0)
         set(lhisol, 0)
         set(rhisol, 0)

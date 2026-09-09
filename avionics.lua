@@ -88,6 +88,8 @@ defineProperty("z_fd_flag_copilot", createGlobalPropertyi("sim/custom/7x/z_fd_fl
 defineProperty("z_td_flag_pilot", createGlobalPropertyi("sim/custom/7x/z_td_flag_pilot", 0))
 defineProperty("z_td_flag_copilot", createGlobalPropertyi("sim/custom/7x/z_td_flag_copilot", 0))
 
+defineProperty("z_ice_flag_pilot", createGlobalPropertyi("sim/custom/7x/z_ice_flag_pilot", 0))
+
 defineProperty("z_ias_flag_pilot", createGlobalPropertyi("sim/custom/7x/z_ias_flag_pilot", 0))
 defineProperty("z_ias_flag_copilot", createGlobalPropertyi("sim/custom/7x/z_ias_flag_copilot", 0))
 -- irs
@@ -323,9 +325,9 @@ defineProperty("z_ac1_intruder_type", createGlobalPropertyi("sim/custom/7x/z_ac1
 defineProperty("z_ac1_vy", createGlobalPropertyi("sim/custom/7x/z_ac1_vy", 0))
 
 -- gen stopped
-defineProperty("gen_off_0", globalPropertyi("sim/cockpit2/annunciators/generator_off[0]"))
-defineProperty("gen_off_1", globalPropertyi("sim/cockpit2/annunciators/generator_off[1]"))
-defineProperty("gen_off_2", globalPropertyi("sim/cockpit2/annunciators/generator_off[2]"))
+defineProperty("gen_off_1", createGlobalPropertyi("sim/custom/7x/z_gen_power_1", 0))
+defineProperty("gen_off_2", createGlobalPropertyi("sim/custom/7x/z_gen_power_2", 0))
+defineProperty("gen_off_3", createGlobalPropertyi("sim/custom/7x/z_gen_power_3", 0))
 
 -- cas source
 defineProperty("z_cas_source_pilot", createGlobalPropertyi("sim/custom/7x/z_cas_source_pilot", 1))
