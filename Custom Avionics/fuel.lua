@@ -242,6 +242,8 @@ function update()
     local N1gauche = get(indicN10) --
     local N1central = get(indicN11) --
     local N1droit = get(indicN12) --
+    local ignition_allowed = get(apun1) >= 90 or N1gauche > 70 or
+                                 N1central > 70 or N1droit > 70
     local isah = get(isa)
     local valpydM1 = ((1010 * math.log(N1gauche)) + 24.559)
     if valpydM1 < 1 then valpydM1 = 1 end
@@ -491,7 +493,8 @@ function update()
     --     set(fpump1, 1)
     --     if N1central > 15 then set(fpump1, 2) end
     -- end
-    if get(SOV0) == 1 and N1gauche < 5 and get(starteng) == 1 then
+    if ignition_allowed and get(SOV0) == 1 and N1gauche < 5 and
+        get(starteng) == 1 then
         set(flageng0, 1) -- un flag
     end
     if get(flageng0) == 1 then
@@ -510,7 +513,8 @@ function update()
     else
         set(initfuel0, 1)
     end
-    if get(SOV1) == 1 and N1central < 5 and get(starteng) == 1 then
+    if ignition_allowed and get(SOV1) == 1 and N1central < 5 and
+        get(starteng) == 1 then
         set(flageng1, 1)
     end
     if get(flageng1) == 1 then
@@ -530,7 +534,8 @@ function update()
     else
         set(initfuel1, 1)
     end
-    if get(SOV2) == 1 and N1droit < 5 and get(starteng) == 1 then
+    if ignition_allowed and get(SOV2) == 1 and N1droit < 5 and
+        get(starteng) == 1 then
         set(flageng2, 1)
     end
     if get(flageng2) == 1 then
@@ -658,4 +663,3 @@ function update()
         set(AIwingY, 0)
     end
 end
-
