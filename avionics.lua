@@ -325,9 +325,9 @@ defineProperty("z_ac1_intruder_type", createGlobalPropertyi("sim/custom/7x/z_ac1
 defineProperty("z_ac1_vy", createGlobalPropertyi("sim/custom/7x/z_ac1_vy", 0))
 
 -- gen stopped
-defineProperty("gen_off_1", createGlobalPropertyi("sim/custom/7x/z_gen_power_1", 0))
-defineProperty("gen_off_2", createGlobalPropertyi("sim/custom/7x/z_gen_power_2", 0))
-defineProperty("gen_off_3", createGlobalPropertyi("sim/custom/7x/z_gen_power_3", 0))
+defineProperty("gen_on_1", createGlobalPropertyi("sim/custom/7x/z_gen_power_1", 0))
+defineProperty("gen_on_2", createGlobalPropertyi("sim/custom/7x/z_gen_power_2", 0))
+defineProperty("gen_on_3", createGlobalPropertyi("sim/custom/7x/z_gen_power_3", 0))
 
 -- cas source
 defineProperty("z_cas_source_pilot", createGlobalPropertyi("sim/custom/7x/z_cas_source_pilot", 1))
