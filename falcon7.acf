@@ -163,7 +163,7 @@ P _gear/0/_lonE 0.0
 P _gear/0/_lonN 0.0
 P _gear/0/_lonR 100.0
 P _gear/0/_scon 20068.800781250
-P _gear/0/_stat_def 0.227398232
+P _gear/0/_stat_def 0.227398202
 P _gear/0/_steerdeg_hispeed 2.0
 P _gear/0/_steerdeg_lospeed 60.0
 P _gear/0/_strut_comp 0.0
@@ -51723,9 +51723,9 @@ P acf/_hoops_hud_EQ 1
 P acf/_hud_tapes_track_vector 0
 P acf/_hyd_brakes 1
 P acf/_hyd_ele_pump_0123 2
-P acf/_hyd_engn_pump_0123/0 0
-P acf/_hyd_engn_pump_0123/1 1
-P acf/_hyd_engn_pump_0123/2 2
+P acf/_hyd_engn_pump_0123/0 1
+P acf/_hyd_engn_pump_0123/1 0
+P acf/_hyd_engn_pump_0123/2 3
 P acf/_hyd_engn_pump_0123/3 0
 P acf/_hyd_engn_pump_0123/4 0
 P acf/_hyd_engn_pump_0123/5 0
@@ -51737,7 +51737,7 @@ P acf/_hyd_flightcons 1
 P acf/_hyd_gear 1
 P acf/_hyd_gear_fail_mode 2
 P acf/_hyd_gear_fail_speed 140.0
-P acf/_hyd_max_p 2862.500000000
+P acf/_hyd_max_p 4125.0
 P acf/_hyd_max_p_RAT 2900.0
 P acf/_hyd_max_p_ele 2290.0
 P acf/_hyd_max_p_eng 3300.0
