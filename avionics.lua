@@ -305,6 +305,10 @@ z_tcas_adi_upper_antler_pitch = createGlobalPropertyf("sim/cockpit/weapons/z_tca
 z_tcas_adi_lower_antler_pitch = createGlobalPropertyf("sim/cockpit/weapons/z_tcas_adi_lower_antler_pitch", 0)
 defineProperty("z_tcas_adi_visible", createGlobalPropertyi("sim/custom/7x/z_tcas_adi_visible", 0))
 
+-- hsi map range
+z_hsi_map_range_pilot = createGlobalPropertyf("sim/cockpit/weapons/z_hsi_map_range_pilot", 8)
+z_hsi_map_range_copilot = createGlobalPropertyf("sim/cockpit/weapons/z_hsi_map_range_copilot", 8)
+
 -- spoils
 defineProperty("z_flaps_state", createGlobalPropertyi("sim/custom/7x/z_flaps_state", 0))
 
