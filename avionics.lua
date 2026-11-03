@@ -267,6 +267,8 @@ defineProperty("z_fdtd_copilot", createGlobalPropertyi("sim/custom/7x/z_fdtd_cop
 -- ils 
 defineProperty("z_ils_status", createGlobalPropertyi("sim/custom/7x/z_ils_status", 0))
 
+defineProperty("z_fms_takeoff_config_AT", createGlobalPropertyi("sim/custom/7x/z_fms_takeoff_config_AT", 0))
+
 -- adi warning boxes
 defineProperty("z_adi_gnd_prox_box", createGlobalPropertyi("sim/custom/7x/z_adi_gnd_prox_box", 0))
 defineProperty("z_adi_pull_up_box", createGlobalPropertyi("sim/custom/7x/z_adi_pull_up_box", 0))
