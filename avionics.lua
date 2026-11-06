@@ -350,6 +350,8 @@ defineProperty("z_ecs_pipe_pax_little", createGlobalPropertyi("sim/custom/7x/z_e
 defineProperty("z_ecs_pipe_crew_little", createGlobalPropertyi("sim/custom/7x/z_ecs_pipe_crew_little", 0))
 defineProperty("z_ecs_pipe_xbleed", createGlobalPropertyi("sim/custom/7x/z_ecs_pipe_xbleed", 0))
 defineProperty("z_ecs_pipe_crew_start", createGlobalPropertyi("sim/custom/7x/z_ecs_pipe_crew_start", 0))
+
+defineProperty("z_autopilot_state", createGlobalPropertyi("sim/custom/7x/z_autopilot_state", 0))
 -- Z
 
 createProp("sim/custom/7x/checklist", "int")
